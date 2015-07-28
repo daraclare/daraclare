@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- SEO -->
-    <title>Nestor - Contact</title>
-    <meta name="description" content="HTML5 & CSS3 Multipurpose Theme" />
-    <meta name="keywords" content="HTML5, CSS3, Theme, ThemeForest, Flat, Responsive, Multipurpose, Modern" />
-    <link type="text/plain" rel="author" href="humans.txt" />
+    <title>DaraClare: UX Designer &amp; Frontend Developer</title>
+    <meta name="description" content="Dara Clare, UX designer and frontend developer" />
+    <meta name="keywords" content="UX Designer, UI Designer, Frontend Developer, Front End Developer, Designer, Dublin, CSS, HTML, Development, Frontend, Responsive, Developer" />
     
     <link href="favicon.png" rel="icon" type="image/png" />
     
@@ -48,10 +47,10 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-right navbar-nav">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                       <li><a href="blog.html">Blog</a></li>
-                    <li class="active"><a href="contact.php">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                   </ul>
                 </div> <!-- /navbar-collapse -->
               </nav>
@@ -69,148 +68,100 @@
               <div class="region">
 
                 <div id="page-title-block" class="page-title block">
-                  <h1>Contact</h1>
+                  <h1>Hi, I'm Dara Clare, designer &amp; developer</h1>
                 </div> <!-- /page-title-block -->
 
               </div> <!-- /region -->
             </div> <!-- /top-content-left-region -->
 
-            <!-- /top-content-right-region -->
+           
 
           </div> <!-- /row -->
         </div> <!-- /container -->
       </div> <!-- /top-content-region -->
 
       <div id="content-region" class="content region">
-
-        <div id="contacts-block" class="contacts block">
-          <div class="container">
-            <div class="row">
-
-              <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2">
-                <h5>Address</h5>
-                <p>Dublin, Ireland</p>
-              </div>
-
-              <div class="col-xs-12 col-sm-6 col-md-4 margin-top-xs-40">
-                <h5>Contact Me</h5>
-                <p>Phone: <a href="tel:+353876394884">+353 87 639 4884</a><br>Email:<a href="mailto:daraclare@gmail.com"> daraclare@gmail.com</a></p>
-              </div>
-
-            </div> <!-- /row -->
-          </div> <!-- /container -->
-        </div> <!-- /contacts-block -->
         
-        <div id="contact-content-block" class="contact-content block">
+        <div id="about-content-block" class="about-content block">
           <div class="container">
             <div class="row">
 
-              <div class="col-xs-12 col-md-8 col-md-offset-2">
-                
-                <?php  
+              <div class="col-xs-12 col-md-6">
+                <h5>Designer turned developer</h5>
+                <p>Starting as a designer in 2005, I've worked in various SMEs as the sole designer for print and web, as well as working for large corporations such as Bank of Ireland and Deloitte. With a healthy obsession with typgraphy, I received a first class honours MA from DIT, which included a 20,000 word thesis on Responsive Web Typography</p>
+                <p>Working with code &#40;namely HTML and CSS&#41; since 2005, the decision to retrain as a developer was an obvious step for me. I have always enjoyed problem solving and debugging code. Below are a few topics which remain the most interesting aspects of web development and coding for me&#58;</p>
+                <ul class="icon-list">
+                  <li><i class="icon ion-checkmark-round text-color-theme"></i>Accessibility&#58; creating code which is accessible by screen readers and other devices to create an all inclusive, user-friendly experience</li>
+                  <li><i class="icon ion-checkmark-round text-color-theme"></i>Responsive design&#58; from responsive logos to typography</li>
+                  <li><i class="icon ion-checkmark-round text-color-theme"></i>Search engine optimisation&#58; a necessary evil!</li>
+                  <li><i class="icon ion-checkmark-round text-color-theme"></i>Prototyping&#58; revealing how a design will look and interact with its users</li>
+                </ul>
+              </div> <!-- /col-xs-12 -->
 
-                  if (isset($_POST['submit'])) {
-
-                    if ($_POST['contact-name'] != "") {
-                      $_POST['contact-name'] = filter_var($_POST['contact-name'], FILTER_SANITIZE_STRING);
-                      if ($_POST['contact-name'] == "") {
-                        $errors .= 'Please enter a valid name.<br><br>';
-                      }
-                    } else {
-                      $errors .= 'Please enter your name.<br>';
-                    }
-
-                    if ($_POST['contact-email'] != "") {
-                      $email = filter_var($_POST['contact-email'], FILTER_SANITIZE_EMAIL);
-                      if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                        $errors .= "$email is <strong>NOT</strong> a valid email address.<br><br>";
-                      }
-                    } else {
-                      $errors .= 'Please enter your email address.<br>';
-                    } 
-
-                    if ($_POST['contact-subject'] != "") {
-                      $_POST['contact-subject'] = filter_var($_POST['contact-subject'], FILTER_SANITIZE_STRING);
-                      if ($_POST['contact-subject'] == "") {
-                        $errors .= 'Please enter a subject.<br>';
-                      }
-                    } else {
-                      $errors .= 'Please enter a subject.<br>';
-                    }
-
-                    if ($_POST['contact-message'] != "") {
-                      $_POST['contact-message'] = filter_var($_POST['contact-message'], FILTER_SANITIZE_STRING);
-                      if ($_POST['contact-message'] == "") {
-                        $errors .= 'Please enter a message to send.<br>';
-                      }
-                    } else {
-                      $errors .= 'Please enter a message to send.<br>';
-                    }
-
-                    if (!$errors) {
-                      $mail_to = 'daraclare@gmail.com';
-                      $subject = "DaraClare.com Website Form" . $_POST['contact-subject'];
-                      $message  = 'From: ' . $_POST['contact-name'] . "<br>";
-                      $message .= 'Email: ' . $email . "<br><br>";
-                      $message .= "Message:<br>" . stripslashes($_POST['contact-message']) . "<br><br>";
-                      $header = "From:" . $email . "\r\n" . "MIME-Version: 1.0\r\n" . "Content-Type: text/html; charset=UTF-8";
-                      mail($mail_to, $subject, $message, $header) or die("Error!");
-                    ?>
-                      <div class="alert alert-success">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
-                        <strong>Success!</strong> Thank you for your email.
-                      </div>
-                    <?php 
-                    } else {
-                    ?>
-                      <div class="alert alert-danger">
-                        <button type="button" class="close" data-dismiss="alert">×</button>
-                        <strong>Error!</strong><br /> <?php echo $errors; ?>
-                      </div>
-                    <?php
-                    }
-                  }
-
-                ?>
-              
-                <form class="form-horizontal" method="post" role="form">
-                  <div class="form-group">
-                    <div class="col-md-6 margin-bottom-sm-20">
-                      <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Name" />
-                    </div> <!-- /col-md-6 -->
-                    <div class="col-md-6">
-                      <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Email" />
-                    </div> <!-- /col-md-6 -->
-                  </div> <!-- /form-group -->
-                  
-                  <div class="form-group">
-                    <div class="col-xs-12">
-                      <input type="text" class="form-control" id="contact-subject" name="contact-subject" placeholder="Subject" />
-                    </div> <!-- /col-xs-12 -->
-                  </div> <!-- /form-group -->
-                  
-                  <div class="form-group">
-                    <div class="col-xs-12">
-                      <textarea class="form-control" rows="8" id="contact-message" name="contact-message" placeholder="Message"></textarea>
-                    </div> <!-- /col-xs-12 -->
-                  </div> <!-- /form-group -->
-                  
-                  <div class="form-group">
-                    <div class="col-xs-12">
-                      <input type="submit" class="btn btn-primary btn-sm" id="submit" name="submit" value="Send" />
-                    </div> <!-- /col-xs-12 -->
-                  </div> <!-- /form-group -->
-                </form>
-
+              <div class="col-xs-12 col-md-6 margin-top-sm-30">
+                <div class="flex-arrow-slider">
+                  <ul class="slides">
+                    <li><img src="img/content/cookies.jpg" alt="cookies" title="cookies" class="img-responsive img-full-width" /></li>
+                    <li><img src="img/content/tea.jpg" alt="tea" title="tea" class="img-responsive img-full-width" /></li>
+                    <li><img src="img/content/table.jpg" alt="table" title="table" class="img-responsive img-full-width" /></li>
+                  </ul>
+                </div> <!-- /flex-arrow-slider -->
               </div> <!-- /col-xs-12 -->
 
             </div> <!-- /row -->
           </div> <!-- /container -->
-        </div> <!-- /contact-content-block -->
+        </div> <!-- /about-content-block -->
+
+        <div id="panels-3-block" class="panels-3 block">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-xs-12 col-md-4 panels-item">
+                <h5 class="panels-item-title">Graphic Design Dublin</h5>
+                <p><a href="http://www.meetup.com/Graphic-Design-Dublin/">Graphic Design Dublin </a>is a meetup group I started in 2012 for web and graphic designers in Dublin. It was created with a view to providing a networking platform for Dublin based designers and developers and now has over 430 members.</p>
+              </div> <!-- /panels-item -->
+
+              <div class="col-xs-12 col-md-4 panels-item margin-top-sm-30">
+                <h5 class="panels-item-title">HTML &amp; CSS Courses</h5>
+                <p>In partnership with CodingGrace and DPP Skillnet, we run HTML &amp; CSS Courses aimed for designers of all levels. If you interesting in joining us, please visit <a href="https://codinggrace.com/events/"> CodingGrace.com</a> for more information and to find upcoming events.</p>
+              </div> <!-- /panels-item -->
+
+              <div class="col-xs-12 col-md-4 panels-item margin-top-sm-30">
+                <h5 class="panels-item-title">Typography Courses</h5>
+                <p>In partnership with DPP Skillnet, we will soon be running a typography course for designers. Topics will include laying out type in a grid, implementing Typekit, choosing and combining typefaces and more. Further informaton to follow very soon!</p>
+              </div> <!-- /panels-item -->
+
+            </div> <!-- /row -->
+          </div> <!-- /container -->
+        </div> <!-- /panels-3-block -->
 
       </div> <!-- /content-region -->
 
+      <div id="content-1-region" class="content-1 bg-color-grayLight1 region">
+
+        <div id="company-stats-2-block" class="company-stats-2 block text-center">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
+                <h3 class="text-color-theme">Interested in getting involved or have an idea?</h3>
+                <p>If you'd like to get involved in one of our groups for designers or developers, or if you have an idea for a course or event you'd like to share, please <a href="contact.php">contact me</a> and share your ideas. I'm always interested in suggestions and feedback.</p>
+                  <p>If you're interested in one of our courses you may also want to take our <a href="https://graphicdd.typeform.com/to/wReqwG">training survey</a>.</p>
+              </div> <!-- /col-xs-12 -->
+            </div> <!-- /row -->
+
     
+
+          </div> <!-- /container -->
+        </div> <!-- /company-stats-2-block -->
+
+      </div> <!-- /content-1-region -->
+
+     
+
+      
+
+      
 
       <div id="content-3-region" class="content-3 region bg-color-theme text-color-light">
 
@@ -219,8 +170,8 @@
             <div class="row">
 
               <div class="col-xs-12 text-center">
-                <h4 class="call-to-action-1-text">Interested in web design and development?</h4>
-                <a href="blog.html" class="call-to-action-1-button btn btn-default">Read my blog</a>
+                <h4 class="call-to-action-1-text">Follow these clients and hire me</h4>
+                <a href="contact.php" class="call-to-action-1-button btn btn-default">Contact Me</a>
               </div>
 
             </div> <!-- /row -->
@@ -301,7 +252,7 @@
       </footer>
     </div> <!-- /main-wrapper -->
 
-    
+   
 
     <!-- Back to top button -->
     
