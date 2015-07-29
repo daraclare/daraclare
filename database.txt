@@ -1,0 +1,9 @@
+MYSQL 2005 database
+
+Database Name: db1225260_ daraclare
+User Name: u1225260_daraclare
+password: itNGiW?1
+Database Host: mssql476int.cp.blacknight.com
+
+Table Prefix: dc_
+

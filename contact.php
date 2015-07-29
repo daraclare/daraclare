@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- SEO -->
-    <title>Nestor - Contact</title>
-    <meta name="description" content="HTML5 & CSS3 Multipurpose Theme" />
-    <meta name="keywords" content="HTML5, CSS3, Theme, ThemeForest, Flat, Responsive, Multipurpose, Modern" />
-    <link type="text/plain" rel="author" href="humans.txt" />
+    <title>DaraClare: UX Designer &amp; Frontend Developer</title>
+    <meta name="description" content="Dara Clare, UX designer and frontend developer" />
+    <meta name="keywords" content="UX Designer, UI Designer, Frontend Developer, Front End Developer, Designer, Dublin, CSS, HTML, Development, Frontend, Responsive, Developer" />
     
     <link href="favicon.png" rel="icon" type="image/png" />
     
@@ -38,7 +37,7 @@
             </div> <!-- /logo-region -->
 
             <div id="menu-region" class="col-md-9">
-              <nav class="navbar nestor-main-menu" role="navigation">
+              <nav class="navbar daraclare-main-menu" role="navigation">
                 <!-- Menu button for mobile display -->
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">MENU</button>
@@ -50,7 +49,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog">Blog</a></li>
                     <li class="active"><a href="contact.php">Contact</a></li>
                   </ul>
                 </div> <!-- /navbar-collapse -->
@@ -219,8 +218,8 @@
             <div class="row">
 
               <div class="col-xs-12 text-center">
-                <h4 class="call-to-action-1-text">Interested in web design and development?</h4>
-                <a href="blog.html" class="call-to-action-1-button btn btn-default">Read my blog</a>
+                <h3 class="call-to-action-1-text">Interested in web design and development?</h3>
+                <a href="blog" class="call-to-action-1-button btn btn-default">Read my blog</a>
               </div>
 
             </div> <!-- /row -->
