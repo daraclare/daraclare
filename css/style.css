@@ -11,7 +11,7 @@
 /** Menus                                                   **/
 /**  - Nav                                                  **/
 /**  - Mav Pills                                            **/
-/**  - Nestor Main Menu                                     **/
+/**  - daraclare Main Menu                                     **/
 /** Breadcrumbs                                             **/
 /** Portfolio                                               **/
 /**  - Portfolio Page                                       **/
@@ -592,21 +592,21 @@ a:active {
 .lato-font { font-family: 'Lato', sans-serif; }
 .bitter-font { font-family: 'Bitter', serif; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h3, h5, h6 {
   font-family: 'Bitter', serif;
   font-weight: 400;
   color: #2b2b2b;
   margin: 1.2em 0 1em;
 }
 
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+h1:first-child, h2:first-child, h4:first-child, h3:first-child, h5:first-child, h6:first-child {
   margin-top: 0;
 }
 
 h1 { font-size: 2.6em; }
 h2 { font-size: 2.2em; }
-h3 { font-size: 1.8em; }
-h4 { font-size: 1.6em; }
+h4 { font-size: 1.8em; }
+h3 { font-size: 1em; }
 h5 { font-size: 1.4em; }
 h6 { font-size: 1.2em; }
 
@@ -752,49 +752,49 @@ header {
     height: 100px;
   }
 
-  .stuck .nestor-main-menu {
+  .stuck .daraclare-main-menu {
     padding-top: 46px;
   }
 
-  .stuck .nestor-main-menu .nav > li > a {
+  .stuck .daraclare-main-menu .nav > li > a {
     padding-bottom: 34px;
   }
 
 }
 
-.header-1 .nestor-main-menu {
+.header-1 .daraclare-main-menu {
   padding: 0;
 }
 
-.header-1 .nestor-main-menu .nav > li:last-child > a {
+.header-1 .daraclare-main-menu .nav > li:last-child > a {
   padding-right: 20px;
 }
 
-.header-1 .nestor-main-menu .navbar-collapse {
+.header-1 .daraclare-main-menu .navbar-collapse {
   text-align: center;
   line-height: 10px;
 }
 
-.header-1 .nestor-main-menu .dropdown-menu {
+.header-1 .daraclare-main-menu .dropdown-menu {
   text-align: left;
 }
 
-.header-1 .nestor-main-menu .navbar-nav {
+.header-1 .daraclare-main-menu .navbar-nav {
   float: none!important;
   display: inline-block;
 }
 
-.header-1 .nestor-main-menu .navbar-collapse .navbar-nav.navbar-right:last-child {
+.header-1 .daraclare-main-menu .navbar-collapse .navbar-nav.navbar-right:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 767px) {
   
-  .header-1 .nestor-main-menu .navbar-collapse {
+  .header-1 .daraclare-main-menu .navbar-collapse {
     text-align: left;
   }
   
-  .header-1 .nestor-main-menu .navbar-nav {
+  .header-1 .daraclare-main-menu .navbar-nav {
     display: block;
   }
   
@@ -856,48 +856,48 @@ header {
 
 }
 
-/** Nestor Main Menu **/
-.nestor-main-menu {
+/** daraclare Main Menu **/
+.daraclare-main-menu {
   padding: 62px 0 0;
   margin: 0;
   border: 0;
   z-index: 998;
 }
 
-.nestor-main-menu .navbar-right .dropdown-menu {
+.daraclare-main-menu .navbar-right .dropdown-menu {
   left: 0;
   right: auto;
 }
 
-.nestor-main-menu .nav > li > a {
+.daraclare-main-menu .nav > li > a {
   padding: 0 20px 43px;
 }
 
-.nestor-main-menu .nav > li:last-child > a {
+.daraclare-main-menu .nav > li:last-child > a {
   padding-right: 0;
 }
 
-.nestor-main-menu a {
+.daraclare-main-menu a {
   -webkit-transition: none;
      -moz-transition: none;
        -o-transition: none;
           transition: none;
 }
 
-.nestor-main-menu a,
-.nestor-main-menu .active > a,
-.nestor-main-menu .nav .open > a,
-.nestor-main-menu .nav .open > a:hover,
-.nestor-main-menu .nav .open > a:focus,
-.nestor-main-menu .nav > li > a:hover,
-.nestor-main-menu .nav > li > a:focus,
-.nestor-main-menu .nav > li:hover > a,
-.nestor-main-menu .nav > li:focus > a {
+.daraclare-main-menu a,
+.daraclare-main-menu .active > a,
+.daraclare-main-menu .nav .open > a,
+.daraclare-main-menu .nav .open > a:hover,
+.daraclare-main-menu .nav .open > a:focus,
+.daraclare-main-menu .nav > li > a:hover,
+.daraclare-main-menu .nav > li > a:focus,
+.daraclare-main-menu .nav > li:hover > a,
+.daraclare-main-menu .nav > li:focus > a {
   color: #777;
   background-color: transparent;
 }
 
-.nestor-main-menu .dropdown-menu {
+.daraclare-main-menu .dropdown-menu {
   font-size: 0.9em;
   padding: 0;
   margin: 0;
@@ -908,56 +908,56 @@ header {
           box-shadow: none;
 }
 
-.nestor-main-menu .dropdown-menu a {
+.daraclare-main-menu .dropdown-menu a {
   padding: 12px 20px;
   border-bottom: 1px dotted #2b2b2b;
 }
 
-.nestor-main-menu .dropdown-menu li:last-child a {
+.daraclare-main-menu .dropdown-menu li:last-child a {
   border-bottom: 0;
 }
 
-.nestor-main-menu .dropdown-menu > li > a {
+.daraclare-main-menu .dropdown-menu > li > a {
   color: #cdcdcd;
   font-weight: 300;
 }
 
-.nestor-main-menu .dropdown-menu > .active > a,
-.nestor-main-menu .dropdown-menu > li > a:hover,
-.nestor-main-menu .dropdown-menu > li > a:focus {
+.daraclare-main-menu .dropdown-menu > .active > a,
+.daraclare-main-menu .dropdown-menu > li > a:hover,
+.daraclare-main-menu .dropdown-menu > li > a:focus {
   background-color: #2b2b2b;
 }
 
-.nestor-main-menu .dropdown-menu > li:hover,
-.nestor-main-menu .dropdown-menu > .active {
+.daraclare-main-menu .dropdown-menu > li:hover,
+.daraclare-main-menu .dropdown-menu > .active {
   background: transparent;
 }
 
 @media (max-width: 991px) {
   
-  .nestor-main-menu {
+  .daraclare-main-menu {
     padding: 0;
   }
 
-  .nestor-main-menu .nav > li:last-child > a {
+  .daraclare-main-menu .nav > li:last-child > a {
     padding-right: 20px;
   }
   
-  .nestor-main-menu .navbar-collapse {
+  .daraclare-main-menu .navbar-collapse {
     text-align: center;
     line-height: 10px;
   }
   
-  .nestor-main-menu .dropdown-menu {
+  .daraclare-main-menu .dropdown-menu {
     text-align: left;
   }
   
-  .nestor-main-menu .navbar-nav {
+  .daraclare-main-menu .navbar-nav {
     float: none!important;
     display: inline-block;
   }
   
-  .nestor-main-menu .navbar-collapse .navbar-nav.navbar-right:last-child {
+  .daraclare-main-menu .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: 0;
   }
 
@@ -965,7 +965,7 @@ header {
 
 @media (min-width: 768px) {
   
-  .nestor-main-menu .dropdown:hover .dropdown-menu {
+  .daraclare-main-menu .dropdown:hover .dropdown-menu {
     display: block;
   }
 
@@ -973,7 +973,7 @@ header {
 
 @media (max-width: 767px) {
   
-  .nestor-main-menu .navbar-collapse {
+  .daraclare-main-menu .navbar-collapse {
     margin-bottom: 30px;
     text-align: left;
     border: 0;
@@ -981,54 +981,54 @@ header {
             box-shadow: none;
   }
   
-  .nestor-main-menu .navbar-nav {
+  .daraclare-main-menu .navbar-nav {
     display: block;
     margin: 0;
   }
   
-  .nestor-main-menu .nav > li > a {
+  .daraclare-main-menu .nav > li > a {
     padding: 12px 20px;
     margin: 0;
     border-top: 1px dotted #cdcdcd;
   }
 
-  .nestor-main-menu .nav > li:first-child > a {
+  .daraclare-main-menu .nav > li:first-child > a {
     border-top: 0;
   }
   
-  .nestor-main-menu .navbar-header {
+  .daraclare-main-menu .navbar-header {
     text-align: center;
   }
   
-  .nestor-main-menu .navbar-toggle {
+  .daraclare-main-menu .navbar-toggle {
     float: none;
     width: 250px;
     border-radius: 0;
-    color: #f0f0f0;
+    color: #fff;
     padding: 12px;
     margin: 0 0 30px;
   }
 
-  .nestor-main-menu .dropdown-menu {
+  .daraclare-main-menu .dropdown-menu {
     margin-bottom: 12px;
   }
 
-  .nestor-main-menu .dropdown-menu a {
+  .daraclare-main-menu .dropdown-menu a {
     border-bottom: 0;
   }
 
-  .nestor-main-menu .dropdown-menu > li > a {
+  .daraclare-main-menu .dropdown-menu > li > a {
     color: #777;
   }
 
-  .nestor-main-menu .navbar-nav .open .dropdown-menu > li > a,
-  .nestor-main-menu .navbar-nav .open .dropdown-menu .dropdown-header {
+  .daraclare-main-menu .navbar-nav .open .dropdown-menu > li > a,
+  .daraclare-main-menu .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 10px 0 10px 30px;
   }
 
-  .nestor-main-menu .dropdown-menu > .active > a,
-  .nestor-main-menu .dropdown-menu > li > a:hover,
-  .nestor-main-menu .dropdown-menu > li > a:focus {
+  .daraclare-main-menu .dropdown-menu > .active > a,
+  .daraclare-main-menu .dropdown-menu > li > a:hover,
+  .daraclare-main-menu .dropdown-menu > li > a:focus {
     background-color: #f6f6f6;
   }
   
@@ -1314,15 +1314,15 @@ header {
 /************************** Comments *************************/
 /*************************************************************/
 
-.nestor-comments {
+.daraclare-comments {
   margin-top: 60px;
 }
 
-.nestor-comment {
+.daraclare-comment {
   margin-top: 40px;
 }
 
-.nestor-comment-subject {
+.daraclare-comment-subject {
   margin-bottom: 10px;
 }
 
@@ -2104,8 +2104,8 @@ header {
 /*************************************************************/
 
 /** Layout 1 **/
-.pricing-tables-1 h4,
 .pricing-tables-1 h3,
+.pricing-tables-1 h4,
 .pricing-tables-1 .pricing-table-description ul {
   margin: 0px;
 }
@@ -2125,7 +2125,7 @@ header {
   background-color: #f6f6f6;
 }
 
-.pricing-tables-1 .pricing-table-promotional .pricing-table-price h3 {
+.pricing-tables-1 .pricing-table-promotional .pricing-table-price h4 {
   color: #f0f0f0;
 }
 
@@ -2151,15 +2151,15 @@ header {
 .pricing-table-violet .pricing-table-price { background-color: #705ab2; }
 .pricing-table-yellow .pricing-table-price { background-color: #f6c83a; }
 
-.pricing-table-aqua .pricing-table-price h3,
-.pricing-table-blue .pricing-table-price h3,
-.pricing-table-brown .pricing-table-price h3,
-.pricing-table-emerald .pricing-table-price h3,
-.pricing-table-green .pricing-table-price h3,
-.pricing-table-orange .pricing-table-price h3,
-.pricing-table-red .pricing-table-price h3,
-.pricing-table-violet .pricing-table-price h3,
-.pricing-table-yellow .pricing-table-price h3 {
+.pricing-table-aqua .pricing-table-price h4,
+.pricing-table-blue .pricing-table-price h4,
+.pricing-table-brown .pricing-table-price h4,
+.pricing-table-emerald .pricing-table-price h4,
+.pricing-table-green .pricing-table-price h4,
+.pricing-table-orange .pricing-table-price h4,
+.pricing-table-red .pricing-table-price h4,
+.pricing-table-violet .pricing-table-price h4,
+.pricing-table-yellow .pricing-table-price h4 {
   color: #f0f0f0;
 }
 
@@ -2763,8 +2763,8 @@ input[type="number"] {
 .text-color-light,
 .text-color-light h1,
 .text-color-light h2,
-.text-color-light h3,
 .text-color-light h4,
+.text-color-light h3,
 .text-color-light h5,
 .text-color-light h6,
 .text-color-light a:hover,
@@ -2921,7 +2921,7 @@ input[type="number"] {
 **/
 
 .bg-image-rails {
-  background: url('../img/background-images/dublin-BW.png') scroll center no-repeat;
+  background: url('../img/background-images/dublin-BW.jpg') scroll center no-repeat;
   -webkit-background-size: cover;
      -moz-background-size: cover;
        -o-background-size: cover;

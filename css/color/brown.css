@@ -6,7 +6,7 @@
 /** Generic Styles                                          **/
 /** Menus                                                   **/
 /**  - Nav Pills                                            **/
-/**  - Nestor Main Menu                                     **/
+/**  - daraclare Main Menu                                     **/
 /** Portfolio                                               **/
 /**  - Portfolio Page                                       **/
 /**  - Our Work 1                                           **/
@@ -66,27 +66,27 @@ a {
   color: #c2b49a;
 }
 
-/** Nestor Main Menu **/
-.nestor-main-menu .active > a,
-.nestor-main-menu .nav .open > a,
-.nestor-main-menu .nav .open > a:hover,
-.nestor-main-menu .nav .open > a:focus,
-.nestor-main-menu .nav > li > a:hover,
-.nestor-main-menu .nav > li > a:focus,
-.nestor-main-menu .nav > li:hover > a,
-.nestor-main-menu .nav > li:focus > a {
+/** daraclare Main Menu **/
+.daraclare-main-menu .active > a,
+.daraclare-main-menu .nav .open > a,
+.daraclare-main-menu .nav .open > a:hover,
+.daraclare-main-menu .nav .open > a:focus,
+.daraclare-main-menu .nav > li > a:hover,
+.daraclare-main-menu .nav > li > a:focus,
+.daraclare-main-menu .nav > li:hover > a,
+.daraclare-main-menu .nav > li:focus > a {
   color: #c2b49a;
 }
 
-.nestor-main-menu .dropdown-menu > .active > a,
-.nestor-main-menu .dropdown-menu > li > a:hover,
-.nestor-main-menu .dropdown-menu > li > a:focus {
+.daraclare-main-menu .dropdown-menu > .active > a,
+.daraclare-main-menu .dropdown-menu > li > a:hover,
+.daraclare-main-menu .dropdown-menu > li > a:focus {
   color: #c2b49a;
 }
 
 @media (max-width: 767px) {
   
-  .nestor-main-menu .navbar-toggle {
+  .daraclare-main-menu .navbar-toggle {
     border: 1px solid #c2b49a;
     background: #c2b49a;
   }

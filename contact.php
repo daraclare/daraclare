@@ -4,15 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- SEO -->
-    <title>Nestor - Contact</title>
-    <meta name="description" content="HTML5 & CSS3 Multipurpose Theme" />
-    <meta name="keywords" content="HTML5, CSS3, Theme, ThemeForest, Flat, Responsive, Multipurpose, Modern" />
-    <link type="text/plain" rel="author" href="humans.txt" />
-    
+    <title>Dara Clare Carolan: UI Engineer &amp; Frontend Developer</title>
+    <meta name="description" content="Dara Clare Carolan, UI Engineer and Front-end Developer" />
+    <meta name="keywords" content="UI Engineer, Front-end, Frontend Developer, Front End Developer, Dublin, CSS, HTML, Development, Frontend, Responsive, Developer" />
+
     <link href="favicon.png" rel="icon" type="image/png" />
-    
+
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,700%7cBitter:400,700' rel='stylesheet' type='text/css'>
     <!-- Bootstrap 3.1.0 -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -27,7 +26,7 @@
     <link href="css/color/blue.css" rel="stylesheet" />
   </head>
   <body>
-    
+
     <div class="main-wrapper">
       <header>
         <div class="container">
@@ -38,19 +37,19 @@
             </div> <!-- /logo-region -->
 
             <div id="menu-region" class="col-md-9">
-              <nav class="navbar nestor-main-menu" role="navigation">
+              <nav class="navbar daraclare-main-menu" role="navigation">
                 <!-- Menu button for mobile display -->
                 <div class="navbar-header">
                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">MENU</button>
                 </div>
-            
+
                 <!-- Navigation links -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                   <ul class="nav navbar-right navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="blog.html">Blog</a></li>
+                      <! -- insert blog -->
                     <li class="active"><a href="contact.php">Contact</a></li>
                   </ul>
                 </div> <!-- /navbar-collapse -->
@@ -100,14 +99,14 @@
             </div> <!-- /row -->
           </div> <!-- /container -->
         </div> <!-- /contacts-block -->
-        
+
         <div id="contact-content-block" class="contact-content block">
           <div class="container">
             <div class="row">
 
               <div class="col-xs-12 col-md-8 col-md-offset-2">
-                
-                <?php  
+
+                <?php
 
                   if (isset($_POST['submit'])) {
 
@@ -127,7 +126,7 @@
                       }
                     } else {
                       $errors .= 'Please enter your email address.<br>';
-                    } 
+                    }
 
                     if ($_POST['contact-subject'] != "") {
                       $_POST['contact-subject'] = filter_var($_POST['contact-subject'], FILTER_SANITIZE_STRING);
@@ -149,7 +148,7 @@
 
                     if (!$errors) {
                       $mail_to = 'daraclare@gmail.com';
-                      $subject = "DaraClare.com Website Form" . $_POST['contact-subject'];
+                      $subject = "Message from daraclare.com contact form " . $_POST['contact-subject'];
                       $message  = 'From: ' . $_POST['contact-name'] . "<br>";
                       $message .= 'Email: ' . $email . "<br><br>";
                       $message .= "Message:<br>" . stripslashes($_POST['contact-message']) . "<br><br>";
@@ -160,7 +159,7 @@
                         <button type="button" class="close" data-dismiss="alert">×</button>
                         <strong>Success!</strong> Thank you for your email.
                       </div>
-                    <?php 
+                    <?php
                     } else {
                     ?>
                       <div class="alert alert-danger">
@@ -172,7 +171,7 @@
                   }
 
                 ?>
-              
+
                 <form class="form-horizontal" method="post" role="form">
                   <div class="form-group">
                     <div class="col-md-6 margin-bottom-sm-20">
@@ -182,19 +181,19 @@
                       <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Email" />
                     </div> <!-- /col-md-6 -->
                   </div> <!-- /form-group -->
-                  
+
                   <div class="form-group">
                     <div class="col-xs-12">
                       <input type="text" class="form-control" id="contact-subject" name="contact-subject" placeholder="Subject" />
                     </div> <!-- /col-xs-12 -->
                   </div> <!-- /form-group -->
-                  
+
                   <div class="form-group">
                     <div class="col-xs-12">
                       <textarea class="form-control" rows="8" id="contact-message" name="contact-message" placeholder="Message"></textarea>
                     </div> <!-- /col-xs-12 -->
                   </div> <!-- /form-group -->
-                  
+
                   <div class="form-group">
                     <div class="col-xs-12">
                       <input type="submit" class="btn btn-primary btn-sm" id="submit" name="submit" value="Send" />
@@ -210,7 +209,7 @@
 
       </div> <!-- /content-region -->
 
-    
+
 
       <div id="content-3-region" class="content-3 region bg-color-theme text-color-light">
 
@@ -219,8 +218,8 @@
             <div class="row">
 
               <div class="col-xs-12 text-center">
-                <h4 class="call-to-action-1-text">Interested in web design and development?</h4>
-                <a href="blog.html" class="call-to-action-1-button btn btn-default">Read my blog</a>
+                <h4 class="call-to-action-1-text">Would you like to work with me?</h4>
+                <a href="contact.php" class="call-to-action-1-button btn btn-default">Contact Me</a>
               </div>
 
             </div> <!-- /row -->
@@ -278,7 +277,7 @@
               <div class="region">
 
                 <div id="copyright-block" class="block">
-                  <p>Created by Dara Clare | Copyright &copy; 2015</p>
+                  <p>Created by Dara Clare | Copyright &copy; 2016</p>
                 </div> <!-- /copyright-block -->
 
               </div> <!-- /region -->
@@ -288,9 +287,9 @@
               <div class="region">
 
                 <div id="social-networks-footer-block" class="social-networks-footer block">
-                  <a href="http://www.facebook.com/GraphicDesignDublin"><i class="icon ion-social-facebook"></i></a>
-                  <a href="https://twitter.com/GraphicDD"><i class="icon ion-social-twitter"></i></a>
-                  <a href="http://github.com/daraclare"><i class="icon ion-social-github"></i></a>
+
+                  <a href="https://twitter.com/Dublin_UX"><i class="icon ion-social-twitter"></i></a>
+                  <a href="http://github.com/daraclare?tab=repositories"><i class="icon ion-social-github"></i></a>
                 </div> <!-- /social-networks-footer -->
 
               </div> <!-- /region -->
@@ -301,16 +300,16 @@
       </footer>
     </div> <!-- /main-wrapper -->
 
-    
+
 
     <!-- Back to top button -->
-    
+
     <div id="back-to-top">
       <i class="ion-ios7-arrow-up"></i>
     </div>
 
     <!-- End of Back to top button -->
-    
+
     <!-- jQuery 1.10.2 -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <!-- jQuery Plugins -->
@@ -321,9 +320,18 @@
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/venobox.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="js/app.js"></script>
     <!-- Demo Switcher -->
     <script src="js/demo-switcher.js"></script>
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66460302-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </body>
 </html>
