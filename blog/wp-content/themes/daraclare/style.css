@@ -1,5 +1,17 @@
 /*
-Theme Name: daraclare
+Theme Name: Twenty Fifteen
+Theme URI: https://wordpress.org/themes/twentyfifteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: twentyfifteen
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 */
 
 
@@ -47,7 +59,7 @@ Theme Name: daraclare
  * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
  */
 
-html, body, div, span, applet, object, iframe, h1, h2, h4, h3, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
 	border: 0;
 	font-family: inherit;
 	font-size: 100%;
@@ -204,8 +216,8 @@ textarea {
 
 h1,
 h2,
-h4,
 h3,
+h4,
 h5,
 h6 {
 	clear: both;
@@ -455,11 +467,6 @@ del {
 :-ms-input-placeholder {
 	color: rgba(51, 51, 51, 0.7);
 	font-family: "Noto Sans", sans-serif;
-}
-
-
-#appeal {
- color:red;   
 }
 
 
@@ -1642,10 +1649,10 @@ a.post-thumbnail:focus {
 	margin-bottom: 1.0909em;
 }
 
-.entry-content h4,
-.entry-summary h4,
-.page-content h4,
-.comment-content h4 {
+.entry-content h3,
+.entry-summary h3,
+.page-content h3,
+.comment-content h3 {
 	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1.3333;
@@ -1653,16 +1660,16 @@ a.post-thumbnail:focus {
 	margin-bottom: 1.3333em;
 }
 
-.entry-content h3,
+.entry-content h4,
 .entry-content h5,
 .entry-content h6,
-.entry-summary h3,
+.entry-summary h4,
 .entry-summary h5,
 .entry-summary h6,
-.page-content h3,
+.page-content h4,
 .page-content h5,
 .page-content h6,
-.comment-content h3,
+.comment-content h4,
 .comment-content h5,
 .comment-content h6 {
 	font-size: 15px;
@@ -1686,26 +1693,26 @@ a.post-thumbnail:focus {
 
 .entry-content > h1:first-child,
 .entry-content > h2:first-child,
-.entry-content > h4:first-child,
 .entry-content > h3:first-child,
+.entry-content > h4:first-child,
 .entry-content > h5:first-child,
 .entry-content > h6:first-child,
 .entry-summary > h1:first-child,
 .entry-summary > h2:first-child,
-.entry-summary > h4:first-child,
 .entry-summary > h3:first-child,
+.entry-summary > h4:first-child,
 .entry-summary > h5:first-child,
 .entry-summary > h6:first-child,
 .page-content > h1:first-child,
 .page-content > h2:first-child,
-.page-content > h4:first-child,
 .page-content > h3:first-child,
+.page-content > h4:first-child,
 .page-content > h5:first-child,
 .page-content > h6:first-child,
 .comment-content > h1:first-child,
 .comment-content > h2:first-child,
-.comment-content > h4:first-child,
 .comment-content > h3:first-child,
+.comment-content > h4:first-child,
 .comment-content > h5:first-child,
 .comment-content > h6:first-child {
 	margin-top: 0;
@@ -3252,10 +3259,10 @@ p > video {
 		margin-bottom: 0.9655em;
 	}
 
-	.entry-content h4,
-	.entry-summary h4,
-	.page-content h4,
-	.comment-content h4 {
+	.entry-content h3,
+	.entry-summary h3,
+	.page-content h3,
+	.comment-content h3 {
 		font-size: 24px;
 		font-size: 2.4rem;
 		line-height: 1.1667;
@@ -3263,10 +3270,10 @@ p > video {
 		margin-bottom: 1.1667em;
 	}
 
-	.entry-content h3,
-	.entry-summary h3,
-	.page-content h3,
-	.comment-content h3 {
+	.entry-content h4,
+	.entry-summary h4,
+	.page-content h4,
+	.comment-content h4 {
 		font-size: 20px;
 		font-size: 2rem;
 		line-height: 1.4;
@@ -3816,10 +3823,10 @@ p > video {
 		margin-bottom: 1em;
 	}
 
-	.entry-content h4,
-	.entry-summary h4,
-	.page-content h4,
-	.comment-content h4 {
+	.entry-content h3,
+	.entry-summary h3,
+	.page-content h3,
+	.comment-content h3 {
 		font-size: 27px;
 		font-size: 2.7rem;
 		line-height: 1.1852;
@@ -3827,10 +3834,10 @@ p > video {
 		margin-bottom: 1.1852em;
 	}
 
-	.entry-content h3,
-	.entry-summary h3,
-	.page-content h3,
-	.comment-content h3 {
+	.entry-content h4,
+	.entry-summary h4,
+	.page-content h4,
+	.comment-content h4 {
 		font-size: 22px;
 		font-size: 2.2rem;
 		line-height: 1.4545;
@@ -4479,10 +4486,10 @@ p > video {
 		margin-bottom: 0.9231em;
 	}
 
-	.entry-content h4,
-	.entry-summary h4,
-	.page-content h4,
-	.comment-content h4 {
+	.entry-content h3,
+	.entry-summary h3,
+	.page-content h3,
+	.comment-content h3 {
 		font-size: 22px;
 		font-size: 2.2rem;
 		line-height: 1.3636;
@@ -4490,10 +4497,10 @@ p > video {
 		margin-bottom: 1.0909em;
 	}
 
-	.entry-content h3,
-	.entry-summary h3,
-	.page-content h3,
-	.comment-content h3 {
+	.entry-content h4,
+	.entry-summary h4,
+	.page-content h4,
+	.comment-content h4 {
 		font-size: 18px;
 		font-size: 1.8rem;
 		line-height: 1.3333;
@@ -5056,10 +5063,10 @@ p > video {
 		margin-bottom: 0.9655em;
 	}
 
-	.entry-content h4,
-	.entry-summary h4,
-	.page-content h4,
-	.comment-content h4 {
+	.entry-content h3,
+	.entry-summary h3,
+	.page-content h3,
+	.comment-content h3 {
 		font-size: 24px;
 		font-size: 2.4rem;
 		line-height: 1.1667;
@@ -5067,10 +5074,10 @@ p > video {
 		margin-bottom: 1.1667em;
 	}
 
-	.entry-content h3,
-	.entry-summary h3,
-	.page-content h3,
-	.comment-content h3 {
+	.entry-content h4,
+	.entry-summary h4,
+	.page-content h4,
+	.comment-content h4 {
 		font-size: 20px;
 		font-size: 2rem;
 		line-height: 1.4;
@@ -5605,10 +5612,10 @@ p > video {
 		margin-bottom: 1em;
 	}
 
-	.entry-content h4,
-	.entry-summary h4,
-	.page-content h4,
-	.comment-content h4 {
+	.entry-content h3,
+	.entry-summary h3,
+	.page-content h3,
+	.comment-content h3 {
 		font-size: 27px;
 		font-size: 2.7rem;
 		line-height: 1.1852;
@@ -5616,10 +5623,10 @@ p > video {
 		margin-bottom: 1.1852em;
 	}
 
-	.entry-content h3,
-	.entry-summary h3,
-	.page-content h3,
-	.comment-content h3 {
+	.entry-content h4,
+	.entry-summary h4,
+	.page-content h4,
+	.comment-content h4 {
 		font-size: 22px;
 		font-size: 2.2rem;
 		line-height: 1.4545;

@@ -41,30 +41,78 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 </h2>
 
 <div class="changelog point-releases">
-	<h4><?php echo _n( 'Maintenance and Security Release', 'Maintenance and Security Releases', 3 ); ?></h4>
+	<h3><?php echo _n( 'Maintenance and Security Release', 'Maintenance and Security Releases', 15 ); ?></h3>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
+			'<strong>Version %1$s</strong> addressed some security issues.', 5 ), '4.2.15' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.15' ); ?>
+	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed %2$s bug.',
+			'<strong>Version %1$s</strong> addressed %2$s bugs.', 1 ), '4.2.14', number_format_i18n( 1 ) ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.14' ); ?>
+	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
+			'<strong>Version %1$s</strong> addressed some security issues.', 6 ), '4.2.13' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.13' ); ?>
+	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
+			'<strong>Version %1$s</strong> addressed some security issues.', 3 ), '4.2.12' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.12' ); ?>
+	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
+			'<strong>Version %1$s</strong> addressed some security issues.', 8 ), '4.2.11' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.11' ); ?>
+	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
+         '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.', 1 ), '4.2.10', number_format_i18n( 1 ) ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.10' ); ?>
+	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
+         '<strong>Version %1$s</strong> addressed some security issues.', 9 ), '4.2.9' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.9' ); ?>
+	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
+         '<strong>Version %1$s</strong> addressed some security issues.', 6 ), '4.2.8' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.8' ); ?>
+ 	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
+         '<strong>Version %1$s</strong> addressed some security issues.', 2 ), '4.2.7' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.7' ); ?>
+ 	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
+         '<strong>Version %1$s</strong> addressed some security issues.', 1 ), '4.2.6' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.6' ); ?>
+ 	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
+         '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.', 2 ), '4.2.5', number_format_i18n( 2 ) ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.5' ); ?>
+	</p>
+	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
+         '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.', 4 ), '4.2.4', number_format_i18n( 4 ) ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.4' ); ?>
+	</p>
 	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
          '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.', 20 ), '4.2.3', number_format_i18n( 20 ) ); ?>
-		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'http://codex.wordpress.org/Version_4.2.3' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.3' ); ?>
 	</p>
 	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
          '<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.', 13 ), '4.2.2', number_format_i18n( 13 ) ); ?>
-		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'http://codex.wordpress.org/Version_4.2.2' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.2' ); ?>
 	</p>
 	<p><?php printf( _n( '<strong>Version %1$s</strong> addressed a security issue.',
          '<strong>Version %1$s</strong> addressed some security issues.', 1 ), '4.2.1' ); ?>
-		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'http://codex.wordpress.org/Version_4.2.1' ); ?>
+		<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.2.1' ); ?>
  	</p>
 </div>
 
 <div class="headline-feature feature-video">
-	<embed type="application/x-shockwave-flash" src="https://v0.wordpress.com/player.swf?v=1.04" width="1000" height="560" wmode="direct" seamlesstabbing="true" allowfullscreen="true" allowscriptaccess="always" overstretch="true" flashvars="guid=e9kh3FzP&amp;isDynamicSeeking=true"></embed>
+	<embed type="application/x-shockwave-flash" src="https://v0.wordpress.com/player.swf?v=1.04" width="1000" height="560" wmode="direct" seamlesstabbing="true" allowfullscreen="true" allowscriptaccess="always" overstretch="true" flashvars="guid=e9kH4FzP&amp;isDynamicSeeking=true"></embed>
 </div>
 
 <hr />
 
 <div class="feature-section two-col">
 	<div class="col">
-		<h4><?php _e( 'An easier way to share content' ); ?></h4>
+		<h3><?php _e( 'An easier way to share content' ); ?></h3>
 		<p><?php printf( __( 'Clip it, edit it, publish it. Get familiar with the new and improved Press This. From the <a href="%s">Tools</a> menu, add Press This to your browser bookmark bar or your mobile device home screen. Once installed you can share your content with lightning speed. Sharing your favorite videos, images, and content has never been this fast or this easy.' ), admin_url( 'tools.php' ) ); ?></p>
 		<p><?php _e( 'Drag the bookmarklet below to your bookmarks bar. Then, when you&#8217;re on a page you want to share, simply &#8220;press&#8221; it.' ); ?></p>
 
@@ -83,7 +131,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 		<img src="//s.w.org/images/core/4.2/unicode.png" />
 	</div>
 	<div class="col">
-		<h4><?php _e( 'Extended character support' ); ?></h4>
+		<h3><?php _e( 'Extended character support' ); ?></h3>
 		<p><?php _e( 'Writing in WordPress, whatever your language, just got better. WordPress 4.2 supports a host of new characters out-of-the-box, including native Chinese, Japanese, and Korean characters, musical and mathematical symbols, and hieroglyphs.' ); ?></p>
 		<p><?php
 			/* translators: 1: heart emoji, 2: frog face emoji, 3, monkey emoji, 4: pizza emoji, 5: Emoji Codex link */
@@ -95,43 +143,43 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 <div class="changelog feature-section three-col">
 	<div>
 		<img src="//s.w.org/images/core/4.2/theme-switcher.png" />
-		<h4><?php _e( 'Switch themes in the Customizer' ); ?></h4>
+		<h3><?php _e( 'Switch themes in the Customizer' ); ?></h3>
 		<p><?php _e( 'Browse and preview your installed themes from the Customizer. Make sure the theme looks great with <em>your</em> content, before it debuts on your site. ' ); ?></p>
 	</div>
 	<div>
 		<img src="//s.w.org/images/core/4.2/embeds.png" />
-		<h4><?php _e( 'Even more embeds' ); ?></h4>
+		<h3><?php _e( 'Even more embeds' ); ?></h3>
 		<p><?php _e( 'Paste links from Tumblr.com and Kickstarter and watch them magically appear right in the editor. With every release, your publishing and editing experience get closer together.' ); ?></p>
 	</div>
 	<div class="last-feature">
 		<img src="//s.w.org/images/core/4.2/plugins.png" />
-		<h4><?php _e( 'Streamlined plugin updates' ); ?></h4>
+		<h3><?php _e( 'Streamlined plugin updates' ); ?></h3>
 		<p><?php _e( 'Goodbye boring loading screen, hello smooth and simple plugin updates. Click <em>Update&nbsp;Now</em> and watch the magic happen.' ); ?></p>
 	</div>
 </div>
 
 <div class="changelog under-the-hood feature-list">
-	<h4><?php _e( 'Under the Hood' ); ?></h4>
+	<h3><?php _e( 'Under the Hood' ); ?></h3>
 
 	<div class="feature-section col two-col">
 		<div>
-			<h3><?php _e( 'utf8mb4 support' ); ?></h3>
+			<h4><?php _e( 'utf8mb4 support' ); ?></h4>
 			<p><?php _e( 'Database character encoding has changed from utf8 to utf8mb4, which adds support for a whole range of new 4-byte characters.' ); ?></p>
 
-			<h3><?php _e( 'JavaScript accessibility' ); ?></h3>
+			<h4><?php _e( 'JavaScript accessibility' ); ?></h4>
 			<p><?php
 				/* translators: %s wp.a11y.speak() */
 				printf( __( 'You can now send audible notifications to screen readers in JavaScript with %s. Pass it a string, and an update will be sent to a dedicated ARIA live notifications area.' ), '<code>wp.a11y.speak()</code>' );
 			?></p>
 		</div>
 		<div class="last-feature">
-			<h3><?php _e( 'Shared term splitting' ); ?></h3>
+			<h4><?php _e( 'Shared term splitting' ); ?></h4>
 			<p><?php
 				/* translators: 1: Term splitting guide link */
 				printf( __( 'Terms shared across multiple taxonomies will be split when one of them is updated. Find out more in the <a href="%1$s">Plugin Developer Handbook</a>.' ), 'https://developer.wordpress.org/plugins/taxonomy/working-with-split-terms-in-wp-4-2/' );
 			?></p>
 
-			<h3><?php _e( 'Complex query ordering' ); ?></h3>
+			<h4><?php _e( 'Complex query ordering' ); ?></h4>
 			<p><?php
 				/* translators: 1: WP_Query, 2: WP_Comment_Query, 3: WP_User_Query */
 				printf( __( '%1$s, %2$s, and %3$s now support complex ordering with named meta query clauses.' ), '<code>WP_Query</code>', '<code>WP_Comment_Query</code>', '<code>WP_User_Query</code>' );

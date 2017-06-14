@@ -122,7 +122,7 @@ if ( isset( $_GET['updated'] ) ) {
 	<h2><?php echo esc_html( $title ); ?></h2>
 	<form method="post" action="settings.php" novalidate="novalidate">
 		<?php wp_nonce_field( 'siteoptions' ); ?>
-		<h4><?php _e( 'Operational Settings' ); ?></h4>
+		<h3><?php _e( 'Operational Settings' ); ?></h3>
 		<table class="form-table">
 			<tr>
 				<th scope="row"><label for="site_name"><?php _e( 'Network Title' ) ?></label></th>
@@ -141,7 +141,7 @@ if ( isset( $_GET['updated'] ) ) {
 				</td>
 			</tr>
 		</table>
-		<h4><?php _e( 'Registration Settings' ); ?></h4>
+		<h3><?php _e( 'Registration Settings' ); ?></h3>
 		<table class="form-table">
 			<tr>
 				<th scope="row"><?php _e( 'Allow new registrations' ) ?></th>
@@ -217,7 +217,7 @@ if ( isset( $_GET['updated'] ) ) {
 			</tr>
 
 		</table>
-		<h4><?php _e('New Site Settings'); ?></h4>
+		<h3><?php _e('New Site Settings'); ?></h3>
 		<table class="form-table">
 
 			<tr>
@@ -273,7 +273,7 @@ if ( isset( $_GET['updated'] ) ) {
 			<tr>
 				<th scope="row"><label for="first_comment_author"><?php _e( 'First Comment Author' ) ?></label></th>
 				<td>
-					<input type="text" size="40" name="first_comment_author" id="first_comment_author" aria-describedby="first-comment-author-desc" value="<?php echo get_site_option('first_comment_author') ?>" />
+					<input type="text" size="40" name="first_comment_author" id="first_comment_author" aria-describedby="first-comment-author-desc" value="<?php echo esc_attr( get_site_option('first_comment_author') ); ?>" />
 					<p class="description" id="first-comment-author-desc">
 						<?php _e( 'The author of the first comment on a new site.' ) ?>
 					</p>
@@ -289,7 +289,7 @@ if ( isset( $_GET['updated'] ) ) {
 				</td>
 			</tr>
 		</table>
-		<h4><?php _e( 'Upload Settings' ); ?></h4>
+		<h3><?php _e( 'Upload Settings' ); ?></h3>
 		<table class="form-table">
 			<tr>
 				<th scope="row"><?php _e( 'Site upload space' ) ?></th>
@@ -327,7 +327,7 @@ if ( isset( $_GET['updated'] ) ) {
 		$translations = wp_get_available_translations();
 		if ( ! empty( $languages ) || ! empty( $translations ) ) {
 			?>
-			<h4><?php _e( 'Language Settings' ); ?></h4>
+			<h3><?php _e( 'Language Settings' ); ?></h3>
 			<table class="form-table">
 				<tr>
 					<th><label for="WPLANG"><?php _e( 'Default Language' ); ?></label></th>
@@ -354,7 +354,7 @@ if ( isset( $_GET['updated'] ) ) {
 		}
 		?>
 
-		<h4><?php _e( 'Menu Settings' ); ?></h4>
+		<h3><?php _e( 'Menu Settings' ); ?></h3>
 		<table id="menu" class="form-table">
 			<tr>
 				<th scope="row"><?php _e( 'Enable administration menus' ); ?></th>

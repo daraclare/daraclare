@@ -268,7 +268,7 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 			<img src="<?php echo esc_url( $theme->screenshot_url ); ?>" width="150" />
 		</a>
 
-		<h4><?php echo $name; ?></h4>
+		<h3><?php echo $name; ?></h3>
 		<div class="theme-author"><?php printf( __( 'By %s' ), $author ); ?></div>
 
 		<div class="action-links">
@@ -370,7 +370,7 @@ class WP_Theme_Install_List_Table extends WP_Themes_List_Table {
 					echo '<a class="theme-install button-primary" href="' . esc_url( wp_nonce_url( $install_url, 'install-theme_' . $theme->slug ) ) . '">' . __( 'Install' ) . '</a>';
 					break;
 			} ?>
-			<h4 class="theme-name"><?php echo $name; ?></h4>
+			<h3 class="theme-name"><?php echo $name; ?></h3>
 			<span class="theme-by"><?php printf( __( 'By %s' ), $author ); ?></span>
 			<?php if ( isset( $theme->screenshot_url ) ): ?>
 				<img class="theme-screenshot" src="<?php echo esc_url( $theme->screenshot_url ); ?>" />

@@ -136,7 +136,7 @@ function install_dashboard() {
 
 	<?php display_plugins_table(); ?>
 
-	<h4><?php _e( 'Popular tags' ) ?></h4>
+	<h3><?php _e( 'Popular tags' ) ?></h3>
 	<p><?php _e( 'You may also browse based on the most popular tags in the Plugin Directory:' ) ?></p>
 	<?php
 
@@ -366,7 +366,7 @@ function install_plugin_information() {
 		'code' => array(), 'pre' => array(), 'em' => array(), 'strong' => array(),
 		'div' => array( 'class' => array() ), 'span' => array( 'class' => array() ),
 		'p' => array(), 'ul' => array(), 'ol' => array(), 'li' => array(),
-		'h1' => array(), 'h2' => array(), 'h4' => array(), 'h3' => array(), 'h5' => array(), 'h6' => array(),
+		'h1' => array(), 'h2' => array(), 'h3' => array(), 'h4' => array(), 'h5' => array(), 'h6' => array(),
 		'img' => array( 'src' => array(), 'class' => array(), 'alt' => array() )
 	);
 
@@ -480,7 +480,7 @@ function install_plugin_information() {
 		<?php } ?>
 		</ul>
 		<?php if ( ! empty( $api->rating ) ) { ?>
-		<h4><?php _e( 'Average Rating' ); ?></h4>
+		<h3><?php _e( 'Average Rating' ); ?></h3>
 		<?php wp_star_rating( array( 'rating' => $api->rating, 'type' => 'percent', 'number' => $api->num_ratings ) ); ?>
 		<small><?php printf( _n( '(based on %s rating)', '(based on %s ratings)', $api->num_ratings ), number_format_i18n( $api->num_ratings ) ); ?></small>
 		<?php }
@@ -503,7 +503,7 @@ function install_plugin_information() {
 			}
 		}
 		if ( ! empty( $api->contributors ) ) { ?>
-			<h4><?php _e( 'Contributors' ); ?></h4>
+			<h3><?php _e( 'Contributors' ); ?></h3>
 			<ul class="contributors">
 				<?php
 				foreach ( (array) $api->contributors as $contrib_username => $contrib_profile ) {

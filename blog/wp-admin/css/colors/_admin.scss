@@ -392,12 +392,12 @@ ul#adminmenu > li.current > a.current:after {
 
 /* Pointers */
 
-.wp-pointer .wp-pointer-content h4 {
+.wp-pointer .wp-pointer-content h3 {
 	background-color: $highlight-color;
 	border-color: darken( $highlight-color, 5% );
 }
 
-.wp-pointer .wp-pointer-content h4:before {
+.wp-pointer .wp-pointer-content h3:before {
 	color: $highlight-color;
 }
 

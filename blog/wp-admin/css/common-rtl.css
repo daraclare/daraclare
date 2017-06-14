@@ -314,8 +314,8 @@ dd {
 
 h1,
 h2,
-h4,
 h3,
+h4,
 h5,
 h6 {
 	display: block;
@@ -334,13 +334,13 @@ h2 {
 	font-weight: 400;
 }
 
-h4 {
+h3 {
 	color: #23282d;
 	font-size: 1.3em;
 	margin: 1em 0;
 }
 
-h3 {
+h4 {
 	font-size: 1em;
 	margin: 1.33em 0;
 }
@@ -1121,7 +1121,7 @@ th.action-links {
 	box-shadow: 0 1px 1px rgba(0,0,0,0.04);
 }
 
-.filter-group h3 {
+.filter-group h4 {
 	position: relative;
 	margin: 0;
 }
@@ -1838,7 +1838,7 @@ html.wp-toolbar {
 	margin-bottom: 1px !important;
 }
 
-.postbox.closed h4 {
+.postbox.closed h3 {
 	border: none;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -1943,7 +1943,7 @@ html.wp-toolbar {
 }
 
 h2.nav-tab-wrapper,
-h4.nav-tab-wrapper {
+h3.nav-tab-wrapper {
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 0;
 	padding-right: 10px;
@@ -1984,7 +1984,7 @@ h2 .nav-tab {
 	margin-left: 190px;
 }
 
-.metabox-holder h4 {
+.metabox-holder h3 {
 	font-size: 14px;
 	padding: 8px 12px;
 	margin: 0;
@@ -2060,11 +2060,11 @@ td.image-icon img {
 	width: auto;
 }
 
-#post-body #post-body-content #namediv h4 {
+#post-body #post-body-content #namediv h3 {
 	margin-top: 0;
 }
 
-#namediv h4 label {
+#namediv h3 label {
 	vertical-align: baseline;
 }
 
@@ -2085,7 +2085,7 @@ td.image-icon img {
 	margin: 10px 0;
 }
 
-#submitdiv h4 {
+#submitdiv h3 {
 	margin-bottom: 0 !important;
 }
 
@@ -2369,7 +2369,7 @@ div.action-links {
 	color: #464646;
 }
 
-#plugin-information .fyi h4 {
+#plugin-information .fyi h3 {
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -2510,7 +2510,7 @@ div.action-links {
 }
 
 /* rtl:ignore */
-#plugin-information .review-title-section h3 {
+#plugin-information .review-title-section h4 {
 	display: inline-block;
 	float: left;
 	margin: 0 6px 0 0;
@@ -2594,7 +2594,7 @@ div.action-links {
 		padding-bottom: 70px; /* reset from the two column height fix, plus accomodate footer */
 	}
 
-	#plugin-information .fyi h4,
+	#plugin-information .fyi h3,
 	#plugin-information .fyi small {
 		display: none;
 	}
@@ -2775,7 +2775,7 @@ img {
 }
 
 /* Theme/Plugin Editor */
-.alignleft h4 {
+.alignleft h3 {
 	margin: 0;
 }
 
@@ -2803,12 +2803,12 @@ img {
 	word-wrap: break-word;
 }
 
-#templateside h4,
+#templateside h3,
 #postcustomstuff p.submit {
 	margin: 0;
 }
 
-#templateside h3 {
+#templateside h4 {
 	margin: 1em 0 0;
 }
 
@@ -3207,7 +3207,7 @@ img {
 		font-size: 14px;
 	}
 
-	.metabox-holder h4 {
+	.metabox-holder h3 {
 		padding: 12px;
 	}
 

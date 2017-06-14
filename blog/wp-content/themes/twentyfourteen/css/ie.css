@@ -657,14 +657,14 @@ a.post-thumbnail:hover {
 	line-height: 1.3333333333;
 }
 
-.ie8 .footer-sidebar .widget h4,
-.ie8 .primary-sidebar .widget h4 {
+.ie8 .footer-sidebar .widget h3,
+.ie8 .primary-sidebar .widget h3 {
 	font-size: 16px;
 	line-height: 1.5;
 }
 
-.ie8 .footer-sidebar .widget h3,
-.ie8 .primary-sidebar .widget h3 {
+.ie8 .footer-sidebar .widget h4,
+.ie8 .primary-sidebar .widget h4 {
 	font-size: 14px;
 	line-height: 1.7142857142;
 }

@@ -1270,14 +1270,14 @@ class WP_Customize_Theme_Control extends WP_Customize_Control {
 			<div class="theme-author"><?php printf( __( 'By %s' ), '{{ data.theme.author }}' ); ?></div>
 
 			<# if ( data.theme.isActiveTheme ) { #>
-				<h4 class="theme-name" id="{{ data.theme.id }}-name">
+				<h3 class="theme-name" id="{{ data.theme.id }}-name">
 					<?php
 					/* translators: %s: theme name */
 					printf( __( '<span>Active:</span> %s' ), '{{ data.theme.name }}' );
 					?>
-				</h4>
+				</h3>
 			<# } else { #>
-				<h4 class="theme-name" id="{{ data.theme.id }}-name">{{ data.theme.name }}</h4>
+				<h3 class="theme-name" id="{{ data.theme.id }}-name">{{ data.theme.name }}</h3>
 				<div class="theme-actions">
 					<button type="button" class="button theme-details"><?php _e( 'Theme Details' ); ?></button>
 				</div>

@@ -239,7 +239,7 @@ table.fixed td {
 	overflow: visible;
 }
 
-#dashboard-widgets h4 a {
+#dashboard-widgets h3 a {
 	height: 14px;
 	line-height: 14px;
 }
@@ -720,7 +720,7 @@ input[type="password"],
 	right: -2px;
 }
 
-* html .widget-title h3 {
+* html .widget-title h4 {
 	width: 205px;
 }
 

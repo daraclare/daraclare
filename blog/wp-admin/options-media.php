@@ -45,7 +45,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 <form action="options.php" method="post">
 <?php settings_fields('media'); ?>
 
-<h4 class="title"><?php _e('Image sizes') ?></h4>
+<h3 class="title"><?php _e('Image sizes') ?></h3>
 <p><?php _e( 'The sizes listed below determine the maximum dimensions in pixels to use when adding an image to the Media Library.' ); ?></p>
 
 <table class="form-table">
@@ -85,14 +85,14 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 </table>
 
 <?php if ( isset( $GLOBALS['wp_settings']['media']['embeds'] ) ) : ?>
-<h4 class="title"><?php _e('Embeds') ?></h4>
+<h3 class="title"><?php _e('Embeds') ?></h3>
 <table class="form-table">
 <?php do_settings_fields( 'media', 'embeds' ); ?>
 </table>
 <?php endif; ?>
 
 <?php if ( !is_multisite() ) : ?>
-<h4 class="title"><?php _e('Uploading Files'); ?></h4>
+<h3 class="title"><?php _e('Uploading Files'); ?></h3>
 <table class="form-table">
 <?php
 // If upload_url_path is not the default (empty), and upload_path is not the default ('wp-content/uploads' or empty)

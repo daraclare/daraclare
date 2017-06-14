@@ -8,7 +8,7 @@
 	box-shadow: 0 3px 6px rgba(0,0,0,0.075);
 }
 
-.wp-pointer-content h4 {
+.wp-pointer-content h3 {
 	position: relative;
 	margin: -1px -1px 5px;
 	padding: 15px 18px 14px 60px;
@@ -20,7 +20,7 @@
 	background: #00a0d2;
 }
 
-.wp-pointer-content h4:before {
+.wp-pointer-content h3:before {
 	background: #fff;
 	-webkit-border-radius: 50%;
 	border-radius: 50%;

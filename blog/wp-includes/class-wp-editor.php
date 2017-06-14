@@ -472,15 +472,15 @@ final class _WP_Editors {
 					'language' => self::$mce_locale,
 					'formats' => "{
 						alignleft: [
-							{selector: 'p,h1,h2,h4,h3,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'left'}},
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'left'}},
 							{selector: 'img,table,dl.wp-caption', classes: 'alignleft'}
 						],
 						aligncenter: [
-							{selector: 'p,h1,h2,h4,h3,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'center'}},
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'center'}},
 							{selector: 'img,table,dl.wp-caption', classes: 'aligncenter'}
 						],
 						alignright: [
-							{selector: 'p,h1,h2,h4,h3,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'right'}},
+							{selector: 'p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li', styles: {textAlign:'right'}},
 							{selector: 'img,table,dl.wp-caption', classes: 'alignright'}
 						],
 						strikethrough: {inline: 'del'}

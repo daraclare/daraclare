@@ -187,7 +187,7 @@ body.folded .revisions .loading-indicator {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-.revisions-diff h4:first-child {
+.revisions-diff h3:first-child {
 	margin-top: 0;
 }
 
@@ -239,8 +239,8 @@ table.diff th {
 
 table.diff td h1,
 table.diff td h2,
-table.diff td h4,
 table.diff td h3,
+table.diff td h4,
 table.diff td h5,
 table.diff td h6 {
 	margin: 0;

@@ -35,7 +35,7 @@ tinymce.PluginManager.add('directionality', function(editor) {
 	function generateSelector(dir) {
 		var selector = [];
 
-		tinymce.each('h1 h2 h4 h3 h5 h6 div p'.split(' '), function(name) {
+		tinymce.each('h1 h2 h3 h4 h5 h6 div p'.split(' '), function(name) {
 			selector.push(name + '[dir=' + dir + ']');
 		});
 

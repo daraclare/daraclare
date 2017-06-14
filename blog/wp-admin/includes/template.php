@@ -1069,7 +1069,7 @@ function do_meta_boxes( $screen, $context, $object ) {
 					echo '<div id="' . $box['id'] . '" class="postbox ' . postbox_classes($box['id'], $page) . $hidden_class . '" ' . '>' . "\n";
 					if ( 'dashboard_browser_nag' != $box['id'] )
 						echo '<div class="handlediv" title="' . esc_attr__('Click to toggle') . '"><br /></div>';
-					echo "<h4 class='hndle'><span>{$box['title']}</span></h4>\n";
+					echo "<h3 class='hndle'><span>{$box['title']}</span></h3>\n";
 					echo '<div class="inside">' . "\n";
 					call_user_func($box['callback'], $object, $box);
 					echo "</div>\n";
@@ -1167,10 +1167,10 @@ function do_accordion_sections( $screen, $context, $object ) {
 					}
 					?>
 					<li class="control-section accordion-section <?php echo $hidden_class; ?> <?php echo $open_class; ?> <?php echo esc_attr( $box['id'] ); ?>" id="<?php echo esc_attr( $box['id'] ); ?>">
-						<h4 class="accordion-section-title hndle" tabindex="0">
+						<h3 class="accordion-section-title hndle" tabindex="0">
 							<?php echo esc_html( $box['title'] ); ?>
 							<span class="screen-reader-text"><?php _e( 'Press return or enter to expand' ); ?></span>
-						</h4>
+						</h3>
 						<div class="accordion-section-content <?php postbox_classes( $box['id'], $page ); ?>">
 							<div class="inside">
 								<?php call_user_func( $box['callback'], $object, $box ); ?>
@@ -1297,7 +1297,7 @@ function do_settings_sections( $page ) {
 
 	foreach ( (array) $wp_settings_sections[$page] as $section ) {
 		if ( $section['title'] )
-			echo "<h4>{$section['title']}</h4>\n";
+			echo "<h3>{$section['title']}</h3>\n";
 
 		if ( $section['callback'] )
 			call_user_func( $section['callback'], $section );
@@ -1776,6 +1776,7 @@ function _media_states( $post ) {
 function compression_test() {
 ?>
 	<script type="text/javascript">
+	var compressionNonce = <?php echo wp_json_encode( wp_create_nonce( 'update_can_compress_scripts' ) ); ?>;
 	var testCompression = {
 		get : function(test) {
 			var x;
@@ -1795,7 +1796,7 @@ function compression_test() {
 					}
 				};
 
-				x.open('GET', ajaxurl + '?action=wp-compression-test&test='+test+'&'+(new Date()).getTime(), true);
+				x.open('GET', ajaxurl + '?action=wp-compression-test&test='+test+'&_ajax_nonce='+compressionNonce+'&'+(new Date()).getTime(), true);
 				x.send('');
 			}
 		},
@@ -2072,7 +2073,7 @@ final class WP_Internal_Pointers {
 			return;
 		}
 
-		$content  = '<h4>' . __( 'Edit Lock' ) . '</h4>';
+		$content  = '<h3>' . __( 'Edit Lock' ) . '</h3>';
 		$content .= '<p>' . __( 'Someone else is editing this. No need to refresh; the lock will disappear when they&#8217;re done.' ) . '</p>';
 
 		self::print_js( 'wp360_locks', 'tr.wp-locked .locked-indicator', array(
@@ -2086,7 +2087,7 @@ final class WP_Internal_Pointers {
 			return;
 		}
 
-		$content  = '<h4>' . __( 'New Feature: Live Widget Previews' ) . '</h4>';
+		$content  = '<h3>' . __( 'New Feature: Live Widget Previews' ) . '</h3>';
 		$content .= '<p>' . __( 'Add, edit, and play around with your widgets from the Customizer.' ) . ' ' . __( 'Preview your changes in real-time and only save them when you&#8217;re ready.' ) . '</p>';
 
 		if ( 'themes' === get_current_screen()->id ) {
@@ -2113,7 +2114,7 @@ final class WP_Internal_Pointers {
 			return;
 		}
 
-		$content  = '<h4>' . __( 'Distraction-Free Writing' ) . '</h4>';
+		$content  = '<h3>' . __( 'Distraction-Free Writing' ) . '</h3>';
 		$content .= '<p>' . __( 'Enable distraction-free writing mode, and everything surrounding the editor will fade away when you start typing. Move your mouse out of the editor to reveal everything again.' ) . '</p>';
 
 		if ( is_rtl() ) {

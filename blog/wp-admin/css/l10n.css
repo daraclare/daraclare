@@ -11,8 +11,8 @@ body.rtl .press-this a.wp-switch-editor {
 /* Arial is best for RTL headings. */
 .rtl h1,
 .rtl h2,
-.rtl h4,
 .rtl h3,
+.rtl h4,
 .rtl h5,
 .rtl h6 {
 	font-family: Arial, sans-serif;

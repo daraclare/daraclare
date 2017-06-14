@@ -151,7 +151,7 @@ include(ABSPATH . 'wp-admin/admin-header.php');
 		foreach ( $feature_list as $feature_name => $features ) {
 			echo '<div class="filter-group">';
 			$feature_name = esc_html( $feature_name );
-			echo '<h3>' . $feature_name . '</h3>';
+			echo '<h4>' . $feature_name . '</h4>';
 			echo '<ol class="feature-group">';
 			foreach ( $features as $feature => $feature_name ) {
 				$feature = esc_attr( $feature );
@@ -204,7 +204,7 @@ if ( $tab ) {
 	<# } #>
 	<span class="more-details"><?php _ex( 'Details &amp; Preview', 'theme' ); ?></span>
 	<div class="theme-author"><?php printf( __( 'By %s' ), '{{ data.author }}' ); ?></div>
-	<h4 class="theme-name">{{ data.name }}</h4>
+	<h3 class="theme-name">{{ data.name }}</h3>
 
 	<div class="theme-actions">
 		<a class="button button-primary" href="{{ data.install_url }}"><?php esc_html_e( 'Install' ); ?></a>
@@ -230,7 +230,7 @@ if ( $tab ) {
 		</div>
 		<div class="wp-full-overlay-sidebar-content">
 			<div class="install-theme-info">
-				<h4 class="theme-name">{{ data.name }}</h4>
+				<h3 class="theme-name">{{ data.name }}</h3>
 				<span class="theme-by"><?php printf( __( 'By %s' ), '{{ data.author }}' ); ?></span>
 
 				<img class="theme-screenshot" src="{{ data.screenshot_url }}" alt="" />

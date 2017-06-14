@@ -45,7 +45,7 @@ template {
 a {
   background: transparent;
 }
-a:active, 
+a:active,
 a:hover {
   outline: 0;
 }

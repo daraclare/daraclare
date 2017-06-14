@@ -497,7 +497,7 @@ border color while dragging a file over the uploader drop area */
 	color: #00a0d2;
 }
 
-.upload-php .mode-grid .media-sidebar .media-uploader-status.errors h4 {
+.upload-php .mode-grid .media-sidebar .media-uploader-status.errors h3 {
 	display: none;
 }
 
@@ -1021,11 +1021,11 @@ border color while dragging a file over the uploader drop area */
 	margin: 5px 0;
 }
 
-#poststuff .imgedit-group-top h4 {
+#poststuff .imgedit-group-top h3 {
 	padding: 0;
 }
 
-.imgedit-group-top h4 a {
+.imgedit-group-top h3 a {
 	text-decoration: none;
 }
 

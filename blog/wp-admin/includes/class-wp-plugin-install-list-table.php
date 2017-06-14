@@ -378,7 +378,7 @@ class WP_Plugin_Install_List_Table extends WP_List_Table {
 					echo '</div></div>';
 				}
 
-				echo '<div class="plugin-group"><h4>' . esc_html( $group_name ) . '</h4>';
+				echo '<div class="plugin-group"><h3>' . esc_html( $group_name ) . '</h3>';
 				// needs an extra wrapping div for nth-child selectors to work
 				echo '<div class="plugin-items">';
 
@@ -457,7 +457,7 @@ class WP_Plugin_Install_List_Table extends WP_List_Table {
 			<div class="plugin-card-top">
 				<a href="<?php echo esc_url( $details_link ); ?>" class="thickbox plugin-icon"><img src="<?php echo esc_attr( $plugin_icon_url ) ?>" /></a>
 				<div class="name column-name">
-					<h3><a href="<?php echo esc_url( $details_link ); ?>" class="thickbox"><?php echo $title; ?></a></h3>
+					<h4><a href="<?php echo esc_url( $details_link ); ?>" class="thickbox"><?php echo $title; ?></a></h4>
 				</div>
 				<div class="action-links">
 					<?php

@@ -7,17 +7,17 @@
  *
  * <div class="accordion-container">
  *	<div class="accordion-section open">
- *		<h4 class="accordion-section-title"></h4>
+ *		<h3 class="accordion-section-title"></h3>
  *		<div class="accordion-section-content">
  *		</div>
  *	</div>
  *	<div class="accordion-section">
- *		<h4 class="accordion-section-title"></h4>
+ *		<h3 class="accordion-section-title"></h3>
  *		<div class="accordion-section-content">
  *		</div>
  *	</div>
  *	<div class="accordion-section">
- *		<h4 class="accordion-section-title"></h4>
+ *		<h3 class="accordion-section-title"></h3>
  *		<div class="accordion-section-content">
  *		</div>
  *	</div>

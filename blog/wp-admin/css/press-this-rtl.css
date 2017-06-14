@@ -289,8 +289,8 @@ textarea {
 
 h1,
 h2,
-h4,
 h3,
+h4,
 h5,
 h6 {
 	clear: both;
@@ -825,7 +825,7 @@ dd {
 	text-decoration: underline;
 }
 
-.tagcloud h4 {
+.tagcloud h3 {
 	margin: 2px 0 12px;
 }
 

@@ -157,7 +157,7 @@ function hash_hmac($algo, $data, $key, $raw_output = false) {
 endif;
 
 function _hash_hmac($algo, $data, $key, $raw_output = false) {
-	$packs = array('md5' => 'h42', 'sha1' => 'h30');
+	$packs = array('md5' => 'H32', 'sha1' => 'H40');
 
 	if ( !isset($packs[$algo]) )
 		return false;

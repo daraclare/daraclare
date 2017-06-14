@@ -296,10 +296,10 @@ class WP_Customize_Panel {
 		$classes = 'accordion-section control-section control-panel control-panel-' . $this->type;
 		?>
 		<li id="accordion-panel-<?php echo esc_attr( $this->id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
-			<h4 class="accordion-section-title" tabindex="0">
+			<h3 class="accordion-section-title" tabindex="0">
 				<?php echo esc_html( $this->title ); ?>
 				<span class="screen-reader-text"><?php _e( 'Press return or enter to open this panel' ); ?></span>
-			</h4>
+			</h3>
 			<ul class="accordion-sub-container control-panel-content">
 				<?php $this->render_content(); ?>
 			</ul>

@@ -37,14 +37,14 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 
 <?php if ( current_user_can('edit_posts') ) : ?>
 <div class="card pressthis">
-	<h4><?php _e('Press This') ?></h4>
+	<h3><?php _e('Press This') ?></h3>
 	<p><?php _e( 'Press This is a little tool that lets you grab bits of the web and create new posts with ease.' );?></p>
 	<p><?php _e( 'Use Press This to clip text, images and videos from any web page. Then edit and add more straight from Press This before you save or publish it in a post on your site.' ); ?></p>
 
 
 	<form>
-		<h4><?php _e( 'Install Press This' ); ?></h4>
-		<h3><?php _e( 'Bookmarklet' ); ?></h3>
+		<h3><?php _e( 'Install Press This' ); ?></h3>
+		<h4><?php _e( 'Bookmarklet' ); ?></h4>
 		<p><?php _e( 'Drag the bookmarklet below to your bookmarks bar. Then, when you&#8217;re on a page you want to share, simply &#8220;press&#8221; it.' ); ?></p>
 
 		<p class="pressthis-bookmarklet-wrapper">
@@ -64,7 +64,7 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 			</p>
 		</div>
 
-		<h3><?php _e( 'Direct link (best for mobile)' ); ?></h3>
+		<h4><?php _e( 'Direct link (best for mobile)' ); ?></h4>
 		<p><?php _e( 'Follow the link to open Press This. Then add it to your device&#8217;s bookmarks or home screen.' ); ?></p>
 
 		<p>
@@ -100,7 +100,7 @@ $cats = get_taxonomy('category');
 $tags = get_taxonomy('post_tag');
 if ( current_user_can($cats->cap->manage_terms) || current_user_can($tags->cap->manage_terms) ) : ?>
 <div class="card">
-    <h4 class="title"><?php _e( 'Categories and Tags Converter' ) ?></h4>
+    <h3 class="title"><?php _e( 'Categories and Tags Converter' ) ?></h3>
     <p><?php printf( __('If you want to convert your categories to tags (or vice versa), use the <a href="%s">Categories and Tags Converter</a> available from the Import screen.'), 'import.php' ); ?></p>
 </div>
 <?php

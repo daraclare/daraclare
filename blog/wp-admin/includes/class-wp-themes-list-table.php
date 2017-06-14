@@ -194,7 +194,7 @@ class WP_Themes_List_Table extends WP_List_Table {
 				<?php endif; ?>
 			</a>
 
-			<h4><?php echo $title; ?></h4>
+			<h3><?php echo $title; ?></h3>
 			<div class="theme-author"><?php printf( __( 'By %s' ), $author ); ?></div>
 			<div class="action-links">
 				<ul>

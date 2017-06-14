@@ -195,10 +195,10 @@ if ( ! CUSTOM_TAGS ) {
 		'h2' => array(
 			'align' => true,
 		),
-		'h4' => array(
+		'h3' => array(
 			'align' => true,
 		),
-		'h3' => array(
+		'h4' => array(
 			'align' => true,
 		),
 		'h5' => array(
@@ -1558,6 +1558,19 @@ function wp_filter_post_kses($data) {
  */
 function wp_kses_post($data) {
 	return wp_kses( $data , 'post' );
+}
+
+/**
+ * Navigates through an array, object, or scalar, and sanitizes content for
+ * allowed HTML tags for post content.
+ *
+ * @since 4.4.2
+ *
+ * @param mixed $value The array or string to filter.
+ * @return mixed $value The filtered content.
+ */
+function wp_kses_post_deep( $data ) {
+	return map_deep( $data, 'wp_kses_post' );
 }
 
 /**

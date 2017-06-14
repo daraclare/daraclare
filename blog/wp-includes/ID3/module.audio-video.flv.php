@@ -69,9 +69,9 @@ define('H264_PROFILE_MAIN',                77);
 define('H264_PROFILE_EXTENDED',            88);
 define('H264_PROFILE_HIGH',               100);
 define('H264_PROFILE_HIGH10',             110);
-define('H264_PROFILE_HIGh322',            122);
-define('H264_PROFILE_HIGh344',            144);
-define('H264_PROFILE_HIGh344_PREDICTIVE', 244);
+define('H264_PROFILE_HIGH422',            122);
+define('H264_PROFILE_HIGH444',            144);
+define('H264_PROFILE_HIGH444_PREDICTIVE', 244);
 
 class getid3_flv extends getid3_handler {
 

@@ -370,7 +370,7 @@ function wp_print_revision_templates() {
 		<div class="diff-error"><?php _e( 'Sorry, something went wrong. The requested comparison could not be loaded.' ); ?></div>
 		<div class="diff">
 		<# _.each( data.fields, function( field ) { #>
-			<h4>{{ field.name }}</h4>
+			<h3>{{ field.name }}</h3>
 			{{{ field.diff }}}
 		<# }); #>
 		</div>

@@ -536,8 +536,8 @@ function customize_themes_print_templates() {
 					<# if ( data.active ) { #>
 						<span class="current-label"><?php _e( 'Current Theme' ); ?></span>
 					<# } #>
-					<h4 class="theme-name">{{{ data.name }}}<span class="theme-version"><?php printf( __( 'Version: %s' ), '{{ data.version }}' ); ?></span></h4>
-					<h3 class="theme-author"><?php printf( __( 'By %s' ), '{{{ data.authorAndUri }}}' ); ?></h3>
+					<h3 class="theme-name">{{{ data.name }}}<span class="theme-version"><?php printf( __( 'Version: %s' ), '{{ data.version }}' ); ?></span></h3>
+					<h4 class="theme-author"><?php printf( __( 'By %s' ), '{{{ data.authorAndUri }}}' ); ?></h4>
 					<p class="theme-description">{{{ data.description }}}</p>
 
 					<# if ( data.parent ) { #>

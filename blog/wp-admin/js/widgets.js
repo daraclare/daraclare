@@ -245,7 +245,7 @@ wpWidgets = {
 
 				if ( ui.draggable.hasClass('ui-sortable-helper') ) {
 					$('#removing-widget').show().children('span')
-					.html( ui.draggable.find('div.widget-title').children('h3').html() );
+					.html( ui.draggable.find('div.widget-title').children('h4').html() );
 				}
 			},
 			out: function(e,ui) {
@@ -258,7 +258,7 @@ wpWidgets = {
 		// Area Chooser
 		$( '#widgets-right .widgets-holder-wrap' ).each( function( index, element ) {
 			var $element = $( element ),
-				name = $element.find( '.sidebar-name h4' ).text(),
+				name = $element.find( '.sidebar-name h3' ).text(),
 				id = $element.find( '.widgets-sortables' ).attr( 'id' ),
 				li = $('<li tabindex="0">').text( $.trim( name ) );
 

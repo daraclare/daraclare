@@ -216,7 +216,7 @@ default:
 </div>
 
 <div id="templateside">
-	<h4><?php _e('Plugin Files'); ?></h4>
+	<h3><?php _e('Plugin Files'); ?></h3>
 
 	<ul>
 <?php

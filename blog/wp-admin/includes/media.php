@@ -278,7 +278,7 @@ function media_handle_upload($file_id, $post_id, $post_data = array(), $override
 	$url = $file['url'];
 	$type = $file['type'];
 	$file = $file['file'];
-	$title = $name;
+	$title = sanitize_text_field( $name );
 	$content = '';
 	$excerpt = '';
 
@@ -1947,7 +1947,7 @@ function media_upload_type_form($type = 'file', $errors = null, $id = null) {
 <input type="hidden" name="post_id" id="post_id" value="<?php echo (int) $post_id; ?>" />
 <?php wp_nonce_field('media-form'); ?>
 
-<h4 class="media-title"><?php _e('Add media files from your computer'); ?></h4>
+<h3 class="media-title"><?php _e('Add media files from your computer'); ?></h3>
 
 <?php media_upload_form( $errors ); ?>
 
@@ -2010,7 +2010,7 @@ function media_upload_type_url_form($type = null, $errors = null, $id = null) {
 <input type="hidden" name="post_id" id="post_id" value="<?php echo (int) $post_id; ?>" />
 <?php wp_nonce_field('media-form'); ?>
 
-<h4 class="media-title"><?php _e('Insert media from another website'); ?></h4>
+<h3 class="media-title"><?php _e('Insert media from another website'); ?></h3>
 
 <script type="text/javascript">
 var addExtImage = {
@@ -2896,7 +2896,7 @@ function wp_add_id3_tag_data( &$metadata, $data ) {
 		if ( ! empty( $data[$version]['comments'] ) ) {
 			foreach ( $data[$version]['comments'] as $key => $list ) {
 				if ( 'length' !== $key && ! empty( $list ) ) {
-					$metadata[$key] = reset( $list );
+					$metadata[$key] = wp_kses_post( reset( $list ) );
 					// Fix bug in byte stream analysis.
 					if ( 'terms_of_use' === $key && 0 === strpos( $metadata[$key], 'yright notice.' ) )
 						$metadata[$key] = 'Cop' . $metadata[$key];

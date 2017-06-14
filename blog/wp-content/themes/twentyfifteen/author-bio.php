@@ -26,7 +26,7 @@
 	</div><!-- .author-avatar -->
 
 	<div class="author-description">
-		<h4 class="author-title"><?php echo get_the_author(); ?></h4>
+		<h3 class="author-title"><?php echo get_the_author(); ?></h3>
 
 		<p class="author-bio">
 			<?php the_author_meta( 'description' ); ?>

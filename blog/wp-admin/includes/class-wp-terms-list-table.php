@@ -467,7 +467,7 @@ class WP_Terms_List_Table extends WP_List_Table {
 		<tr id="inline-edit" class="inline-edit-row" style="display: none"><td colspan="<?php echo $this->get_column_count(); ?>" class="colspanchange">
 
 			<fieldset><div class="inline-edit-col">
-				<h3><?php _e( 'Quick Edit' ); ?></h3>
+				<h4><?php _e( 'Quick Edit' ); ?></h4>
 
 				<label>
 					<span class="title"><?php _ex( 'Name', 'term name' ); ?></span>

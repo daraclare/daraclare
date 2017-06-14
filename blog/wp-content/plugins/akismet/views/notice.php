@@ -39,42 +39,42 @@
 </div>
 <?php elseif ( $type == 'missing-functions' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status failed"><?php esc_html_e('Network functions are disabled.', 'akismet'); ?></h4>
+	<h3 class="key-status failed"><?php esc_html_e('Network functions are disabled.', 'akismet'); ?></h3>
 	<p class="description"><?php printf( __('Your web host or server administrator has disabled PHP&#8217;s <code>gethostbynamel</code> functions.  <strong>Akismet cannot work correctly until this is fixed.</strong>  Please contact your web host or firewall administrator and give them <a href="%s" target="_blank">this information about Akismet&#8217;s system requirements</a>.', 'akismet'), 'http://blog.akismet.com/akismet-hosting-faq/'); ?></p>
 </div>
 <?php elseif ( $type == 'servers-be-down' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status failed"><?php esc_html_e("We can&#8217;t connect to your site.", 'akismet'); ?></h4>
+	<h3 class="key-status failed"><?php esc_html_e("We can&#8217;t connect to your site.", 'akismet'); ?></h3>
 	<p class="description"><?php printf( __('Your firewall may be blocking us. Please contact your host and refer to <a href="%s" target="_blank">our guide about firewalls</a>.', 'akismet'), 'http://blog.akismet.com/akismet-hosting-faq/'); ?></p>
 </div>
 <?php elseif ( $type == 'active-dunning' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status"><?php esc_html_e("Please update your payment details.", 'akismet'); ?></h4>
+	<h3 class="key-status"><?php esc_html_e("Please update your payment details.", 'akismet'); ?></h3>
 	<p class="description"><?php printf( __('We cannot process your transaction. Please contact your bank for assistance, and <a href="%s" target="_blank">update your payment details</a>.', 'akismet'), 'https://akismet.com/account/'); ?></p>
 </div>
 <?php elseif ( $type == 'cancelled' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status"><?php esc_html_e("Your subscription is cancelled.", 'akismet'); ?></h4>
+	<h3 class="key-status"><?php esc_html_e("Your subscription is cancelled.", 'akismet'); ?></h3>
 	<p class="description"><?php printf( __('Please visit the <a href="%s" target="_blank">Akismet account page</a> to reactivate your subscription.', 'akismet'), 'https://akismet.com/account/'); ?></p>
 </div>
 <?php elseif ( $type == 'suspended' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status failed"><?php esc_html_e("Your subscription is suspended.", 'akismet'); ?></h4>
+	<h3 class="key-status failed"><?php esc_html_e("Your subscription is suspended.", 'akismet'); ?></h3>
 	<p class="description"><?php printf( __('Please contact <a href="%s" target="_blank">Akismet support</a> for assistance.', 'akismet'), 'https://akismet.com/contact/'); ?></p>
 </div>
 <?php elseif ( $type == 'active-notice' && $time_saved ) :?>
 <div class="wrap alert active">
-	<h4 class="key-status"><?php echo esc_html( $time_saved ); ?></h4>
+	<h3 class="key-status"><?php echo esc_html( $time_saved ); ?></h3>
 	<p class="description"><?php printf( __('You can help us fight spam and upgrade your account by <a href="%s" target="_blank">contributing a token amount</a>.', 'akismet'), 'https://akismet.com/account/upgrade/'); ?></p>
 </div>
 <?php elseif ( $type == 'missing' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status failed"><?php esc_html_e( 'There is a problem with your key.', 'akismet'); ?></h4>
+	<h3 class="key-status failed"><?php esc_html_e( 'There is a problem with your key.', 'akismet'); ?></h3>
 	<p class="description"><?php printf( __('Please contact <a href="%s" target="_blank">Akismet support</a> for assistance.', 'akismet'), 'https://akismet.com/contact/'); ?></p>
 </div>
 <?php elseif ( $type == 'no-sub' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status failed"><?php esc_html_e( 'Your subscription is missing.', 'akismet'); ?></h4>
+	<h3 class="key-status failed"><?php esc_html_e( 'Your subscription is missing.', 'akismet'); ?></h3>
 	<p class="description">
 		<?php printf( __( 'Since 2012, Akismet began using subscriptions for all accounts (even free ones). It looks like a subscription has not been assigned to your account, and we’d appreciate it if you’d <a href="%s" target="_blank">sign into your account</a> and choose one.', 'akismet'), 'https://akismet.com/account/upgrade/' ); ?>
 		<br /><br />
@@ -83,32 +83,32 @@
 </div>
 <?php elseif ( $type == 'new-key-valid' ) :?>
 <div class="wrap alert active">
-	<h4 class="key-status"><?php esc_html_e('Your Akismet account has been successfully set up and activated. Happy blogging!', 'akismet'); ?></h4>
+	<h3 class="key-status"><?php esc_html_e('Your Akismet account has been successfully set up and activated. Happy blogging!', 'akismet'); ?></h3>
 </div>
 <?php elseif ( $type == 'new-key-invalid' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status"><?php esc_html_e( 'The key you entered is invalid. Please double-check it.' , 'akismet'); ?></h4>
+	<h3 class="key-status"><?php esc_html_e( 'The key you entered is invalid. Please double-check it.' , 'akismet'); ?></h3>
 </div>
 <?php elseif ( $type == 'existing-key-invalid' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status"><?php esc_html_e( 'Your API key is no longer valid. Please enter a new key or contact support@akismet.com.' , 'akismet'); ?></h4>
+	<h3 class="key-status"><?php esc_html_e( 'Your API key is no longer valid. Please enter a new key or contact support@akismet.com.' , 'akismet'); ?></h3>
 </div>
 <?php elseif ( $type == 'new-key-failed' ) :?>
 <div class="wrap alert critical">
-	<h4 class="key-status"><?php esc_html_e( 'The key you entered could not be verified.' , 'akismet'); ?></h4>
+	<h3 class="key-status"><?php esc_html_e( 'The key you entered could not be verified.' , 'akismet'); ?></h3>
 	<p class="description"><?php printf( __('The connection to akismet.com cannot be established. Please refer to <a href="%s" target="_blank">our guide about firewalls</a> and check your server configuration.', 'akismet'), 'http://blog.akismet.com/akismet-hosting-faq/'); ?></p>
 </div>
 <?php elseif ( $type == 'limit-reached' && in_array( $level, array( 'yellow', 'red' ) ) ) :?>
 <div class="wrap alert critical">
 	<?php if ( $level == 'yellow' ): ?>
-	<h4 class="key-status failed"><?php esc_html_e( 'You&#8217;re using your Akismet key on more sites than your Pro subscription allows.', 'akismet' ); ?></h4>
+	<h3 class="key-status failed"><?php esc_html_e( 'You&#8217;re using your Akismet key on more sites than your Pro subscription allows.', 'akismet' ); ?></h3>
 	<p class="description">
 		<?php printf( __( 'Your Pro subscription allows the use of Akismet on only one site. Please <a href="%s" target="_blank">purchase additional Pro subscriptions</a> or upgrade to an Enterprise subscription that allows the use of Akismet on unlimited sites.', 'akismet' ), 'http://docs.akismet.com/billing/add-more-sites/' ); ?>
 		<br /><br />
 		<?php printf( __( 'Please <a href="%s" target="_blank">contact our support team</a> with any questions.', 'akismet' ), 'https://akismet.com/contact/'); ?>
 	</p>
 	<?php elseif ( $level == 'red' ): ?>
-	<h4 class="key-status failed"><?php esc_html_e( 'You&#8217;re using Akismet on far too many sites for your Pro subscription.', 'akismet' ); ?></h4>
+	<h3 class="key-status failed"><?php esc_html_e( 'You&#8217;re using Akismet on far too many sites for your Pro subscription.', 'akismet' ); ?></h3>
 	<p class="description">
 		<?php printf( __( 'To continue your service, <a href="%s" target="_blank">upgrade to an Enterprise subscription</a>, which covers an unlimited number of sites.', 'akismet'), 'https://akismet.com/account/upgrade/' ); ?></p>
 		<br /><br />

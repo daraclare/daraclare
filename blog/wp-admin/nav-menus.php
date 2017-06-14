@@ -718,7 +718,7 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 					<div id="post-body">
 						<div id="post-body-content">
 							<?php if ( ! $add_new_screen ) : ?>
-							<h4><?php _e( 'Menu Structure' ); ?></h4>
+							<h3><?php _e( 'Menu Structure' ); ?></h3>
 							<?php $starter_copy = ( $one_theme_location_no_menus ) ? __( 'Edit your default menu by adding or removing items. Drag each item into the order you prefer. Click Create Menu to save your changes.' ) : __( 'Drag each item into the order you prefer. Click the arrow on the right of the item to reveal additional configuration options.' ); ?>
 							<div class="drag-instructions post-body-plain" <?php if ( isset( $menu_items ) && 0 == count( $menu_items ) ) { ?>style="display: none;"<?php } ?>>
 								<p><?php echo $starter_copy; ?></p>
@@ -738,7 +738,7 @@ require_once( ABSPATH . 'wp-admin/admin-header.php' );
 								<?php endif; ?>
 							<?php endif; ?>
 							<div class="menu-settings" <?php if ( $one_theme_location_no_menus ) { ?>style="display: none;"<?php } ?>>
-								<h4><?php _e( 'Menu Settings' ); ?></h4>
+								<h3><?php _e( 'Menu Settings' ); ?></h3>
 								<?php
 								if ( ! isset( $auto_add ) ) {
 									$auto_add = get_option( 'nav_menu_options' );

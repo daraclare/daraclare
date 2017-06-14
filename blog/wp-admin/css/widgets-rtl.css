@@ -22,7 +22,7 @@
 	text-decoration: none;
 }
 
-.widget-title h3 {
+.widget-title h4 {
 	margin: 0;
 	padding: 15px;
 	line-height: 1;
@@ -100,7 +100,7 @@
 	cursor: pointer;
 }
 
-.sidebar-name h4 {
+.sidebar-name h3 {
 	margin: 0;
 	padding: 8px 10px;
 	overflow: hidden;
@@ -142,7 +142,7 @@ div#widgets-left .inactive-sidebar.closed .sidebar-name {
 	margin-bottom: 10px;
 }
 
-div#widgets-left .sidebar-name h4 {
+div#widgets-left .sidebar-name h3 {
 	padding: 10px 0;
 	margin: 0 0 0 10px;
 }
@@ -245,7 +245,7 @@ div#widgets-right .sidebar-description {
 	margin-top: -5px;
 }
 
-div#widgets-right .sidebar-name h4 {
+div#widgets-right .sidebar-name h3 {
 	padding: 15px 7px;
 }
 

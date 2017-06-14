@@ -273,11 +273,11 @@ abbr.required {
 	border-bottom: 1px solid #DADADA;
 }
 
-h4.media-title  {
+h3.media-title  {
 	font-size: 1.6em;
 }
 
-h3.media-sub-title  {
+h4.media-sub-title  {
 	border-bottom: 1px solid #DADADA;
 	font-size: 1.3em;
 	margin: 12px;
@@ -285,8 +285,8 @@ h3.media-sub-title  {
 }
 
 #gallery-settings .title,
-h4.media-title,
-h3.media-sub-title {
+h3.media-title,
+h4.media-sub-title {
 	font-family: Georgia,"Times New Roman",Times,serif;
 	font-weight: normal;
 	color: #5A5A5A;

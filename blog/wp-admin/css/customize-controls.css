@@ -7,7 +7,7 @@ body {
 	text-decoration: none;
 }
 
-#customize-controls h4 {
+#customize-controls h3 {
 	font-size: 14px;
 }
 
@@ -167,8 +167,8 @@ body {
 	z-index: 0;
 }
 
-#customize-theme-controls .control-section.control-panel > h4.accordion-section-title:focus:after,
-#customize-theme-controls .control-section.control-panel > h4.accordion-section-title:hover:after {
+#customize-theme-controls .control-section.control-panel > h3.accordion-section-title:focus:after,
+#customize-theme-controls .control-section.control-panel > h3.accordion-section-title:hover:after {
 	background: #ddd;
 	color: #000;
 	border: 1px solid #d9d9d9;
@@ -329,18 +329,18 @@ body {
 	padding: 0;
 }
 
-#customize-theme-controls .control-section > h4.accordion-section-title {
+#customize-theme-controls .control-section > h3.accordion-section-title {
 	position: relative;
 	left: 0;
 }
 
-#customize-theme-controls .control-section.current-panel > h4.accordion-section-title {
+#customize-theme-controls .control-section.current-panel > h3.accordion-section-title {
 	left: -354px;
 	-webkit-transition: left ease-in-out .18s;
 	transition: left ease-in-out .18s;
 }
 
-.ios #customize-theme-controls .control-section.current-panel > h4.accordion-section-title {
+.ios #customize-theme-controls .control-section.current-panel > h3.accordion-section-title {
 	-webkit-transition: left 0s;
 	transition: left 0s;
 }
@@ -977,7 +977,7 @@ p.customize-section-description {
 	opacity: 1;
 }
 
-#customize-controls h4.theme-name {
+#customize-controls h3.theme-name {
 	font-size: 15px;
 }
 
@@ -996,7 +996,7 @@ p.customize-section-description {
 	display: none;
 }
 
-#customize-theme-controls .control-section-themes.current-panel > h4.accordion-section-title {
+#customize-theme-controls .control-section-themes.current-panel > h3.accordion-section-title {
 	left: 0;
 }
 

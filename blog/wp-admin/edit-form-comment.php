@@ -23,7 +23,7 @@ if ( !defined('ABSPATH') )
 <div id="post-body" class="metabox-holder columns-2">
 <div id="post-body-content" class="edit-form-section">
 <div id="namediv" class="stuffbox">
-<h4><label for="name"><?php _e( 'Author' ) ?></label></h4>
+<h3><label for="name"><?php _e( 'Author' ) ?></label></h3>
 <div class="inside">
 <table class="form-table editcomment">
 <tbody>
@@ -71,7 +71,7 @@ if ( !defined('ABSPATH') )
 
 <div id="postbox-container-1" class="postbox-container">
 <div id="submitdiv" class="stuffbox" >
-<h4><span class="hndle"><?php _e('Status') ?></span></h4>
+<h3><span class="hndle"><?php _e('Status') ?></span></h3>
 <div class="inside">
 <div class="submitbox" id="submitcomment">
 <div id="minor-publishing">

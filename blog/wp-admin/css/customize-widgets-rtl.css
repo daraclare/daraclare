@@ -402,7 +402,7 @@ body.adding-widget .add-new-widget:before {
 	box-shadow: none;
 }
 
-#available-widgets .widget-title h3 {
+#available-widgets .widget-title h4 {
 	padding: 0 0 5px;
 	font-size: 14px;
 }
@@ -600,7 +600,7 @@ body.adding-widget #customize-preview {
 	.last-widget {
 		margin-bottom: 15px;
 	}
-	.widget-title h3 {
+	.widget-title h4 {
 		padding: 13px 15px;
 	}
 	.widget-top a.widget-action:after {

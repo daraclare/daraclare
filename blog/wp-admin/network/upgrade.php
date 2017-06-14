@@ -108,7 +108,7 @@ switch ( $action ) {
 	default:
 		if ( get_site_option( 'wpmu_upgrade_site' ) != $GLOBALS['wp_db_version'] ) :
 		?>
-		<h4><?php _e( 'Database Upgrade Required' ); ?></h4>
+		<h3><?php _e( 'Database Upgrade Required' ); ?></h3>
 		<p><?php _e( 'WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network.' ); ?></p>
 		<?php endif; ?>
 

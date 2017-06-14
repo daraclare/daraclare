@@ -15,17 +15,17 @@
 				<iframe allowtransparency="true" scrolling="no" frameborder="0" style="width: 100%; height: 215px; overflow: hidden;" src="<?php printf( '//akismet.com/web/1.0/snapshot.php?blog=%s&api_key=%s&height=180&locale=%s', urlencode( get_bloginfo('url') ), Akismet::get_api_key(), get_locale() );?>"></iframe>
 				<ul>
 					<li>
-						<h4><?php esc_html_e( 'Past six months' , 'akismet');?></h4>
+						<h3><?php esc_html_e( 'Past six months' , 'akismet');?></h3>
 						<span><?php echo number_format( $stat_totals['6-months']->spam );?></span>
 						<?php esc_html_e( 'Spam blocked' , 'akismet');?>
 					</li>
 					<li>
-						<h4><?php esc_html_e( 'All time' , 'akismet');?></h4>
+						<h3><?php esc_html_e( 'All time' , 'akismet');?></h3>
 						<span><?php echo number_format( $stat_totals['all']->spam );?></span>
 						<?php esc_html_e( 'Spam blocked' , 'akismet');?>
 					</li>
 					<li>
-						<h4><?php esc_html_e( 'Accuracy' , 'akismet');?></h4>
+						<h3><?php esc_html_e( 'Accuracy' , 'akismet');?></h3>
 						<span><?php echo $stat_totals['all']->accuracy; ?>%</span>
 						<?php printf(
 							esc_html(
@@ -57,7 +57,7 @@
 					<div id="normal-sortables" class="meta-box-sortables ui-sortable">
 						<div id="referrers" class="postbox ">
 							<div class="handlediv" title="Click to toggle"><br></div>
-							<h4 class="hndle"><span><?php esc_html_e( 'Settings' , 'akismet');?></span></h4>
+							<h3 class="hndle"><span><?php esc_html_e( 'Settings' , 'akismet');?></span></h3>
 							<form name="akismet_conf" id="akismet-conf" action="<?php echo esc_url( Akismet_Admin::get_page_url() ); ?>" method="POST">
 								<div class="inside">
 									<table cellspacing="0" class="akismet-settings">
@@ -162,7 +162,7 @@
 					<div id="normal-sortables" class="meta-box-sortables ui-sortable">
 						<div id="referrers" class="postbox ">
 							<div class="handlediv" title="Click to toggle"><br></div>
-							<h4 class="hndle"><span><?php esc_html_e( 'Account' , 'akismet');?></span></h4>
+							<h3 class="hndle"><span><?php esc_html_e( 'Account' , 'akismet');?></span></h3>
 							<div class="inside">
 								<table cellspacing="0">
 									<tbody>

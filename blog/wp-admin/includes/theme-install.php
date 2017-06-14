@@ -10,7 +10,7 @@ $themes_allowedtags = array('a' => array('href' => array(), 'title' => array(), 
 	'abbr' => array('title' => array()), 'acronym' => array('title' => array()),
 	'code' => array(), 'pre' => array(), 'em' => array(), 'strong' => array(),
 	'div' => array(), 'p' => array(), 'ul' => array(), 'ol' => array(), 'li' => array(),
-	'h1' => array(), 'h2' => array(), 'h4' => array(), 'h3' => array(), 'h5' => array(), 'h6' => array(),
+	'h1' => array(), 'h2' => array(), 'h3' => array(), 'h4' => array(), 'h5' => array(), 'h6' => array(),
 	'img' => array('src' => array(), 'class' => array(), 'alt' => array())
 );
 
@@ -96,7 +96,7 @@ function install_theme_search_form( $type_selector = true ) {
 function install_themes_dashboard() {
 	install_theme_search_form( false );
 ?>
-<h3><?php _e('Feature Filter') ?></h3>
+<h4><?php _e('Feature Filter') ?></h4>
 <p class="install-help"><?php _e( 'Find a theme based on specific features.' ); ?></p>
 
 <form method="get">

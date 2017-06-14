@@ -303,10 +303,10 @@ class WP_Customize_Section {
 		$classes = 'accordion-section control-section control-section-' . $this->type;
 		?>
 		<li id="accordion-section-<?php echo esc_attr( $this->id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
-			<h4 class="accordion-section-title" tabindex="0">
+			<h3 class="accordion-section-title" tabindex="0">
 				<?php echo esc_html( $this->title ); ?>
 				<span class="screen-reader-text"><?php _e( 'Press return or enter to expand' ); ?></span>
-			</h4>
+			</h3>
 			<ul class="accordion-section-content">
 				<?php if ( ! empty( $this->description ) ) : ?>
 					<li class="customize-section-description-container">
@@ -349,7 +349,7 @@ class WP_Customize_Themes_Section extends WP_Customize_Section {
 		$classes = 'accordion-section control-section control-section-' . $this->type;
 		?>
 		<li id="accordion-section-<?php echo esc_attr( $this->id ); ?>" class="<?php echo esc_attr( $classes ); ?>">
-			<h4 class="accordion-section-title">
+			<h3 class="accordion-section-title">
 				<?php
 				if ( $this->manager->is_theme_active() ) {
 					/* translators: %s: theme name */
@@ -361,14 +361,14 @@ class WP_Customize_Themes_Section extends WP_Customize_Section {
 				?>
 
 				<button type="button" class="button change-theme"><?php _ex( 'Change', 'theme' ); ?></button>
-			</h4>
+			</h3>
 			<div class="customize-themes-panel control-panel-content themes-php">
 				<h2>
 					<?php _e( 'Themes' ); ?>
 					<span class="title-count theme-count"><?php echo count( $this->controls ) + 1 /* Active theme */; ?></span>
 				</h2>
 
-				<h4 class="accordion-section-title customize-section-title">
+				<h3 class="accordion-section-title customize-section-title">
 					<?php
 					if ( $this->manager->is_theme_active() ) {
 						/* translators: %s: theme name */
@@ -379,7 +379,7 @@ class WP_Customize_Themes_Section extends WP_Customize_Section {
 					}
 					?>
 					<button type="button" class="button customize-theme"><?php _e( 'Customize' ); ?></button>
-				</h4>
+				</h3>
 
 				<div class="theme-overlay" tabindex="0" role="dialog" aria-label="<?php esc_attr_e( 'Theme Details' ); ?>"></div>
 

@@ -23,7 +23,7 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h4 id="comments">
+	<h3 id="comments">
 		<?php
 			if ( 1 == get_comments_number() ) {
 				/* translators: %s: post title */
@@ -34,7 +34,7 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
 					number_format_i18n( get_comments_number() ),  '&#8220;' . get_the_title() . '&#8221;' );
 			}
 		?>
-	</h4>
+	</h3>
 
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
@@ -65,7 +65,7 @@ _deprecated_file( sprintf( __( 'Theme without %1$s' ), basename(__FILE__) ), '3.
 
 <div id="respond">
 
-<h4><?php comment_form_title( __('Leave a Reply'), __('Leave a Reply to %s' ) ); ?></h4>
+<h3><?php comment_form_title( __('Leave a Reply'), __('Leave a Reply to %s' ) ); ?></h3>
 
 <div id="cancel-comment-reply">
 	<small><?php cancel_comment_reply_link() ?></small>

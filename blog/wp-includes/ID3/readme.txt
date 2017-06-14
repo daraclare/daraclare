@@ -542,7 +542,7 @@ Reference material:
 * http://www.xiph.org/archives/vorbis/200109/0459.html
 * http://www.replaygain.org/
 * http://www.lossless-audio.com/
-* http://download.microsoft.com/download/winmediatech30/Doc/1.0/WIN98MeXP/EN-US/ASF_Specification_v.1.0.exe
+* http://download.microsoft.com/download/winmediatech40/Doc/1.0/WIN98MeXP/EN-US/ASF_Specification_v.1.0.exe
 * http://mediaxw.sourceforge.net/files/doc/Active%20Streaming%20Format%20(ASF)%201.0%20Specification.pdf
 * http://www.uni-jena.de/~pfk/mpp/sv8/ (archived at http://www.hydrogenaudio.org/musepack/klemm/www.personal.uni-jena.de/~pfk/mpp/sv8/)
 * http://jfaul.de/atl/

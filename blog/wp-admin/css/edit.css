@@ -123,7 +123,7 @@ input#link_url {
 	width: 16em;
 }
 
-.postarea h4 label {
+.postarea h3 label {
 	float: left;
 }
 
@@ -234,7 +234,7 @@ ul.category-tabs li,
 	margin: 8px 0 5px;
 }
 
-#category-adder h3 {
+#category-adder h4 {
 	margin: 10px 0;
 }
 
@@ -651,7 +651,7 @@ span.wp-media-buttons-icon:before {
 	clear: left;
 }
 
-#poststuff h4 {
+#poststuff h3 {
 	font-size: 14px;
 	padding: 8px 12px;
 	margin: 0;
@@ -949,7 +949,7 @@ a.post-state-format.format-link:before {
 	padding: 4px 0;
 }
 
-.category-adder h3 {
+.category-adder h4 {
 	margin: 0 0 8px;
 }
 
@@ -1051,7 +1051,7 @@ span.description,
 	max-width: 100%;
 }
 
-.col-wrap h4 {
+.col-wrap h3 {
 	margin: 12px 0;
 	font-size: 1.1em;
 }
@@ -1106,7 +1106,7 @@ p.popular-tags a {
 	text-align: justify;
 }
 
-.tagcloud h4 {
+.tagcloud h3 {
 	margin: 2px 0 12px;
 }
 
@@ -1372,7 +1372,7 @@ table.links-table {
 		padding: 10px 10px;
 	}
 
-	#poststuff h4 {
+	#poststuff h3 {
 		padding: 12px;
 	}
 

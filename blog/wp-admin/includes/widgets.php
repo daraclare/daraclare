@@ -76,7 +76,7 @@ function wp_list_widget_controls( $sidebar, $sidebar_name = '' ) {
 		?>
 		<div class="sidebar-name">
 			<div class="sidebar-name-arrow"><br /></div>
-			<h4><?php echo esc_html( $sidebar_name ); ?> <span class="spinner"></span></h4>
+			<h3><?php echo esc_html( $sidebar_name ); ?> <span class="spinner"></span></h3>
 		</div>
 		<?php
 	}
@@ -201,7 +201,7 @@ function wp_widget_control( $sidebar_args ) {
 			<span class="screen-reader-text"><?php echo $widget_title; ?></span>
 		</a>
 	</div>
-	<div class="widget-title"><h3><?php echo $widget_title ?><span class="in-widget-title"></span></h3></div>
+	<div class="widget-title"><h4><?php echo $widget_title ?><span class="in-widget-title"></span></h4></div>
 	</div>
 
 	<div class="widget-inside">

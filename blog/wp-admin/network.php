@@ -216,7 +216,7 @@ function network_step1( $errors = false ) {
 	}
 
 	if ( allow_subdomain_install() && allow_subdirectory_install() ) : ?>
-		<h4><?php esc_html_e( 'Addresses of Sites in your Network' ); ?></h4>
+		<h3><?php esc_html_e( 'Addresses of Sites in your Network' ); ?></h3>
 		<p><?php _e( 'Please choose whether you would like sites in your WordPress network to use sub-domains or sub-directories. <strong>You cannot change this later.</strong>' ); ?></p>
 		<p><?php _e( 'You will need a wildcard DNS record if you are going to use the virtual host (sub-domain) functionality.' ); ?></p>
 		<?php // @todo: Link to an MS readme? ?>
@@ -248,7 +248,7 @@ function network_step1( $errors = false ) {
 		$is_www = ( 0 === strpos( $hostname, 'www.' ) );
 		if ( $is_www ) :
 		?>
-		<h4><?php esc_html_e( 'Server Address' ); ?></h4>
+		<h3><?php esc_html_e( 'Server Address' ); ?></h3>
 		<p><?php printf( __( 'We recommend you change your siteurl to <code>%1$s</code> before enabling the network feature. It will still be possible to visit your site using the <code>www</code> prefix with an address like <code>%2$s</code> but any links will not have the <code>www</code> prefix.' ), substr( $hostname, 4 ), $hostname ); ?></p>
 		<table class="form-table">
 			<tr>
@@ -260,7 +260,7 @@ function network_step1( $errors = false ) {
 		</table>
 		<?php endif; ?>
 
-		<h4><?php esc_html_e( 'Network Details' ); ?></h4>
+		<h3><?php esc_html_e( 'Network Details' ); ?></h3>
 		<table class="form-table">
 		<?php if ( 'localhost' == $hostname ) : ?>
 			<tr>
@@ -376,7 +376,7 @@ function network_step2( $errors = false ) {
 
 	if ( $_POST || ! is_multisite() ) {
 ?>
-		<h4><?php esc_html_e( 'Enabling the Network' ); ?></h4>
+		<h3><?php esc_html_e( 'Enabling the Network' ); ?></h3>
 		<p><?php _e( 'Complete the following steps to enable the features for creating a network of sites.' ); ?></p>
 		<div class="updated inline"><p><?php
 			if ( file_exists( $home_path . '.htaccess' ) )

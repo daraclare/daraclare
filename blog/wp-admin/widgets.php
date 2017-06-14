@@ -17,6 +17,8 @@ if ( ! current_user_can('edit_theme_options') )
 
 $widgets_access = get_user_setting( 'widgets_access' );
 if ( isset($_GET['widgets-access']) ) {
+	check_admin_referer( 'widgets-access' );
+
 	$widgets_access = 'on' == $_GET['widgets-access'] ? 'on' : 'off';
 	set_user_setting( 'widgets_access', $widgets_access );
 }
@@ -232,7 +234,7 @@ if ( isset($_GET['editwidget']) && $_GET['editwidget'] ) {
 	<div class="wrap">
 	<h2><?php echo esc_html( $title ); ?></h2>
 	<div class="editwidget"<?php echo $width; ?>>
-	<h4><?php printf( __( 'Widget %s' ), $name ); ?></h4>
+	<h3><?php printf( __( 'Widget %s' ), $name ); ?></h3>
 
 	<form action="widgets.php" method="post">
 	<div class="widget-inside">
@@ -349,7 +351,7 @@ do_action( 'widgets_admin_page' ); ?>
 	<div id="available-widgets" class="widgets-holder-wrap">
 		<div class="sidebar-name">
 			<div class="sidebar-name-arrow"><br /></div>
-			<h4><?php _e('Available Widgets'); ?> <span id="removing-widget"><?php _ex('Deactivate', 'removing-widget'); ?> <span></span></span></h4>
+			<h3><?php _e('Available Widgets'); ?> <span id="removing-widget"><?php _ex('Deactivate', 'removing-widget'); ?> <span></span></span></h3>
 		</div>
 		<div class="widget-holder">
 			<div class="sidebar-description">

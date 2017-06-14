@@ -290,8 +290,8 @@
 	width: 100%;
 }
 
-.media-sidebar h4,
-.image-details h4 {
+.media-sidebar h3,
+.image-details h3 {
 	position: relative;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -1178,7 +1178,7 @@
 	border-bottom: 1px solid #dfdfdf;
 }
 
-.uploader-inline .media-uploader-status h4 {
+.uploader-inline .media-uploader-status h3 {
 	display: none;
 }
 
@@ -1273,7 +1273,7 @@
 	border: 1px dashed #fff;
 }
 
-.uploader-window h4 {
+.uploader-window h3 {
 	margin: -0.5em 0 0;
 	position: absolute;
 	top: 50%;
@@ -1328,7 +1328,7 @@
 	margin: 0 0 4em;
 }
 
-.uploader-inline h4 {
+.uploader-inline h3 {
 	font-size: 20px;
 	line-height: 28px;
 	font-weight: 400;
@@ -1675,7 +1675,7 @@
 	overflow: hidden;
 }
 
-.attachment-display-settings h3 {
+.attachment-display-settings h4 {
 	margin: 1.4em 0 0.4em;
 }
 
@@ -1747,7 +1747,7 @@
 	padding: 0;
 }
 
-.media-modal .imgedit-group-top h4 {
+.media-modal .imgedit-group-top h3 {
 	text-transform: uppercase;
 	font-size: 12px;
 	color: #666;
@@ -1755,7 +1755,7 @@
 	margin-top: 24px;
 }
 
-.media-modal .imgedit-group-top h4 a {
+.media-modal .imgedit-group-top h3 a {
 	text-decoration: none;
 	color: #666;
 }
@@ -1872,7 +1872,7 @@
 	left: 0;
 }
 
-.image-details .column-settings h4 {
+.image-details .column-settings h3 {
 	margin: 20px;
 	padding-top: 20px;
 	border-top: 1px solid #ddd;
